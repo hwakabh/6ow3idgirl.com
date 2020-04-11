@@ -1,7 +1,14 @@
 doctype html
 html
   head
+    //- rendered variables from views
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    //- inserted contents from extended views
     block content
+  footer
+    p.text
+      |Here is the footer section
+      br
+      |Copyright or credit would be displayed
