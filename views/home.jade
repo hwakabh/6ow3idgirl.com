@@ -1,263 +1,199 @@
-doctype html
-html
-  head
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    title= '6ow 3id Girl - Official Homepage'
-    meta(name='description', content='6ow 3id Girl')
-    meta(name='author', content='@hwakabh')
-    //- Favicons
-    //- link(rel='shortcut icon', href='/images/favicons.ico' type='image/x-icon')
-    //- link(rel='apple-touch-icon', href='/images/apple-touch-icon-small.png')
-    //- link(rel='apple-touch-icon', size='72x72', href='/images/apple-touch-icon-mid.png')
-    //- link(rel='apple-touch-icon', size='114x114', href='/images/apple-touch-icon-large.png')
-    //- Bootstrap
-    link(rel='stylesheet', type='text/css', href='/stylesheets/bootstrap.css')
-    link(rel='stylesheet', type='text/css', href='https://use.fontawesome.com/releases/v5.6.1/css/all.css')
-    //- CSS
-    link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
-    link(rel='stylesheet', type='text/css', href='/stylesheets/prettyPhoto.css')
-    link(rel='stylesheet' type='text/css', href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300')
-    link(rel='stylesheet' type='text/css', href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300')
-    script(type='text/javascript' src='/javascripts/modernizr.custom.js')
+extends ./layout
 
-  body(id='page-top', data-spy='scroll', data-target='.navbar-fixed-top')
-    header(id='header')
-      .intro
-        .container
-          .row
-            .intro-text
-              h1 #[span.name 6ow 3id Girl]
-              p Offical Website
-              a(href='#biography', class='btn btn-default btn-lg page-scroll') View More
-      //- Navigation bars
-      #nav
-        nav.navbar.navbar-custom
-          .container
-            .navbar-header
-              button(class='navbar-toggle', type='button', data-toggle='collapse', data-target='.navbar-main-collapse') #[i.fa.fa-bars]
-              a(class='navbar-brand page-scroll', href='#page-top') 6ow 3id Girl
-            .collapse.navbar-collapse.navbar-right.navbar-main-collapse
-              ul.nav.navbar-nav
-                li #[a(class='hidden', href='#page-top')]
-                li #[a(class='page-scroll', href='#lives') News]
-                li #[a(class='page-scroll', href='#discography') Music]
-                li #[a(class='page-scroll', href='#portfolio') YouTube]
-                li #[a(class='page-scroll', href='#biography') Biography]
-                li #[a(class='page-scroll', href='#shop') Shop]
-                li #[a(class='page-scroll', href='#contact') Contact]
-
-    //- News section
-    #lives.text-center
-      .container
-        .section-tile.center
-          h2 News
-          hr
-        .row
-          .col-md-12
-            h5
-              |2020/04/25 1st single "whack a mole” is released !!
-            .top-news
-              iframe(width="560", height="315", src='https://www.youtube.com/embed/8mE0SY7WW74?start=1&end=60', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
-            p
-              |You can check full movies on #[a(href="#portfolio") This Page] or #[a(href="https://youtu.be/8mE0SY7WW74") Official YouTube] !!
-              br
-              |Download from the link below !!
-          .col-md-8.col-md-offset-2
-            .social
-              ul
-                //- TODO: Added href to download pages
-                li #[a(href='#') #[i.fab.fa-3x.fa-spotify]]
-                li #[a(href='#') #[i.fab.fa-3x.fa-apple]]
-                li #[a(href='#') #[i.fab.fa-3x.fa-google]]
-          .col-md-12
-            p
-              |Another apps can be available from #[a(href="https://big-up.style/MJV3uKqegi") BIG UP !!] website.
-
-    //- Discography Section
-    #discography.text-center
-      .container
-        .section-title.center
-          h2 Music
-          hr
+block content
+  //- News section
+  #lives.text-center
+    .container
+      .section-tile.center
+        h2 News
+        hr
+      .row
+        .col-md-12
+          h5
+            |2020/04/25 1st single "whack a mole” is released !!
+          .top-news
+            iframe(width="560", height="315", src='https://www.youtube.com/embed/8mE0SY7WW74?start=1&end=60', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
           p
-            |Also check #[a(href='http://soundcloud.com/6ow3idgirl') SoundCloud] and #[a(href='https://www.youtube.com/channel/UC_vCY6ONyh2STh02OFTdSTA?view_as=subscriber') Official YouTube Channel] !! 
-        .row
-          .col-md-4.col-sm-6.skill
-            h4 Whack a mole
-            img(src='/images/portfolio/01-jacket.jpg', class='img-responsive', alt='project title')
-          .col-md-4.col-sm-6.skill
-            h4 Second Release coming soon ... !!
-            img(src='/images/coming-soon-lg-rotate.png', class='img-responsive', alt='project title')
-          .col-md-4.col-sm-6.skill
-            h4 Third Release coming soon ... !!
-            img(src='/images/coming-soon-lg-rotate.png', class='img-responsive', alt='project title')
-
-    //- Photo section
-    #portfolio
-      .container
-        .section-title.text-center.center
-          h2 YouTube
-          hr
-          p
-            |Full YouTube official channel is available #[a(href='https://www.youtube.com/channel/UC_vCY6ONyh2STh02OFTdSTA/featured') Here] !!
-        .categories
-          ul.cat
-            li
-              ol.type
-                li
-                  a(href='#' data-filter='*', class='active') All
-                li
-                  a(href='#' data-filter='.web') MVs
-                li
-                  a(href='#' data-filter='.app') Live shoots
-                //- li #[a(href='#' data-filter='.branding') Misc]
-          .clearfix
-        .row
-          .portfolio-items
-            .col-sm-6.col-md-3.col-lg-3.web
-              .portfolio-item
-                .hover-bg
-                  a(href='https://youtu.be/8mE0SY7WW74', title='Released on 2020/04/25', rel='prettyPhoto')
-                    .hover-text
-                      h4 Whack a mole
-                      small Watch music video
-                    img(src='/images/portfolio/01-jacket.jpg', class='img-responsive', alt='Whack a mole')
-            .col-sm-6.col-md-3.col-lg-3.app
-              .portfolio-item
-                .hover-bg
-                  a(href='/images/portfolio/02-large.jpg', title='Project Titile', rel='prettyPhoto')
-                    .hover-text
-                      h4 TBD: Live movies
-                      small App design
-                    img(src='/images/portfolio/02-small.jpg', class='img-responsive', alt='project title')
-            .col-sm-6.col-md-3.col-lg-3.web
-              .portfolio-item
-                .hover-bg
-                  a(href='/images/portfolio/01-large.jpg', title='Project Titile', rel='prettyPhoto')
-                    .hover-text
-                      h4 TBD: MVs
-                      small Web design
-                    img(src='/images/portfolio/01-small.jpg', class='img-responsive', alt='project title')
-            .col-sm-6.col-md-3.col-lg-3.web
-              .portfolio-item
-                .hover-bg
-                  a(href='/images/portfolio/01-large.jpg', title='Project Titile', rel='prettyPhoto')
-                    .hover-text
-                      h4 TBD: MVs
-                      small Web design
-                    img(src='/images/portfolio/01-small.jpg', class='img-responsive', alt='project title')
-          .portfolio-items
-            .col-sm-6.col-md-3.col-lg-3.app
-              .portfolio-item
-                .hover-bg
-                  a(href='/images/portfolio/02-large.jpg', title='Project Titile', rel='prettyPhoto')
-                    .hover-text
-                      h4 TBD: Live movies
-                      small App design
-                    img(src='/images/portfolio/02-small.jpg', class='img-responsive', alt='project title')
-            .col-sm-6.col-md-3.col-lg-3.web
-              .portfolio-item
-                .hover-bg
-                  a(href='/images/portfolio/01-large.jpg', title='Project Titile', rel='prettyPhoto')
-                    .hover-text
-                      h4 TBD: MVs
-                      small Web design
-                    img(src='/images/portfolio/01-small.jpg', class='img-responsive', alt='project title')
-
-    //- Biography Section
-    #biography.text-center
-      .container
-        .section-titile.center
-          h2 Biography
-          hr
-        .row
-          .col-md-12.text-center
-            h3 6ow 3id girl (ローミッドガール)
-            img(class='img-responsive', src='/images/about.jpg')
-          .col-md-8.col-md-offset-2
-            .about-text
-              p.text-center
-                |2020年始動。女性ベースシンガーソングライター。
-                br
-                |ベーシストであり、シンガーソングライター。
-                br
-                |アレンジ、ミックス、マスタリング、映像編集等を通じて総合的に世界観を表現する。
-                br
-                |まだ誰も見たことのない世界へ。
-              p.text-center
-                |since 2020. Female bass singer-songwriter.
-                br
-                |She is a bassist and singer-songwriter, and she comprehensively expresses the worldview
-                br
-                |through arrangement, mixing, mastering, and video editing etc...
-                br
-                |A new world that you never seen.
-
-    //- Shop section
-    //- TODO: Replace CSS
-    #shop.text-center
-      .container
-        .section-title.center
-          h2 Shop
-          hr
-        
-        .col-md-8.col-md-offset-2
-          h3 
-            |TBD
-
-    //- Contact section
-    //- TODO: Mail to 6ow3idgirl@gmail.com
-    #contact.text-center
-      .container
-        .section-title.center
-          h2 Contact
-          hr
-        
-        .col-md-8.col-md-offset-2
-          h3 
-            |Get tickets from #[a(href='https://forms.gle/qJMCXeGp9dRbS8nE9') Here]
-
+            |You can check full movies on #[a(href="#portfolio") This Page] or #[a(href="https://youtu.be/8mE0SY7WW74") Official YouTube] !!
+            br
+            |Download from the link below !!
         .col-md-8.col-md-offset-2
           .social
             ul
-              li #[a(href='#') #[i.fab.fa-3x.fa-facebook]]
-              li #[a(href='https://lin.ee/m30atuE') #[i.fab.fa-3x.fa-line]]
-              li #[a(href='https://twitter.com/6ow3idgirl') #[i.fab.fa-3x.fa-twitter]]
-              li #[a(href='https://t.co/n3i6Ulx4Gk?amp=1') #[i.fab.fa-3x.fa-instagram]]
-
-        .col-md-8.col-md-offset-2
-          h3 Feel free to reach out to me !!
-          form(id='contactForm', name='sentMessage', novalidate)
-            .row
-              .col-md-6
-                .form-group
-                  input(id='name', class='form-control', type='text', placeholder='YourName', required='required')
-                  p.help-block.text-danger
-              .col-md-6
-                .form-group
-                  input(id='email', class='form-control', type='email', placeholder='Email', required='required')
-                  p.help-block.text-danger
-            .form-group
-              textarea(id='message', class='form-control', name='message', rows='4', placeholder='Message Here ...', required)
-              p.help-block.text-danger
-            #success
-            button(type='submit', class='btn btn-default') Send Message
-
-    #footer
-      .container.text-center
-        .fnav
+              //- TODO: Added href to download pages
+              li #[a(href='#') #[i.fab.fa-3x.fa-spotify]]
+              li #[a(href='#') #[i.fab.fa-3x.fa-apple]]
+              li #[a(href='#') #[i.fab.fa-3x.fa-google]]
+        .col-md-12
           p
-            |Copyright &copy @hwakabh All Rights Reserved
-            br
-            | Designed by #[a(href='http://www.templatewire.com', rel='nofollow')]templatewire
+            |Another apps can be available from #[a(href="https://big-up.style/MJV3uKqegi") BIG UP !!] website.
 
-    //- JavaScripts
-    script(type='text/javascript' src='javascripts/jquery.1.11.1.js') 
-    script(type='text/javascript' src='javascripts/bootstrap.js') 
-    script(type='text/javascript' src='javascripts/SmoothScroll.js') 
-    script(type='text/javascript' src='javascripts/jquery.prettyPhoto.js') 
-    script(type='text/javascript' src='javascripts/jquery.isotope.js') 
-    script(type='text/javascript' src='javascripts/waypoints.js') 
-    script(type='text/javascript' src='javascripts/jqBootstrapValidation.js') 
-    script(type='text/javascript' src='javascripts/contact_me.js') 
-    script(type='text/javascript' src='javascripts/main.js')
+  //- Discography Section
+  #discography.text-center
+    .container
+      .section-title.center
+        h2 Music
+        hr
+        p
+          |Also check #[a(href='http://soundcloud.com/6ow3idgirl') SoundCloud] and #[a(href='https://www.youtube.com/channel/UC_vCY6ONyh2STh02OFTdSTA?view_as=subscriber') Official YouTube Channel] !! 
+      .row
+        .col-md-4.col-sm-6.skill
+          h4 Whack a mole
+          img(src='/images/portfolio/01-jacket.jpg', class='img-responsive', alt='project title')
+        .col-md-4.col-sm-6.skill
+          h4 Second Release coming soon ... !!
+          img(src='/images/coming-soon-lg-rotate.png', class='img-responsive', alt='project title')
+        .col-md-4.col-sm-6.skill
+          h4 Third Release coming soon ... !!
+          img(src='/images/coming-soon-lg-rotate.png', class='img-responsive', alt='project title')
+
+  //- Photo section
+  #portfolio
+    .container
+      .section-title.text-center.center
+        h2 YouTube
+        hr
+        p
+          |Full YouTube official channel is available #[a(href='https://www.youtube.com/channel/UC_vCY6ONyh2STh02OFTdSTA/featured') Here] !!
+      .categories
+        ul.cat
+          li
+            ol.type
+              li
+                a(href='#' data-filter='*', class='active') All
+              li
+                a(href='#' data-filter='.web') MVs
+              li
+                a(href='#' data-filter='.app') Live shoots
+              //- li #[a(href='#' data-filter='.branding') Misc]
+        .clearfix
+      .row
+        .portfolio-items
+          .col-sm-6.col-md-3.col-lg-3.web
+            .portfolio-item
+              .hover-bg
+                a(href='https://youtu.be/8mE0SY7WW74', title='Released on 2020/04/25', rel='prettyPhoto')
+                  .hover-text
+                    h4 Whack a mole
+                    small Watch music video
+                  img(src='/images/portfolio/01-jacket.jpg', class='img-responsive', alt='Whack a mole')
+          .col-sm-6.col-md-3.col-lg-3.app
+            .portfolio-item
+              .hover-bg
+                a(href='/images/portfolio/02-large.jpg', title='Project Titile', rel='prettyPhoto')
+                  .hover-text
+                    h4 TBD: Live movies
+                    small App design
+                  img(src='/images/portfolio/02-small.jpg', class='img-responsive', alt='project title')
+          .col-sm-6.col-md-3.col-lg-3.web
+            .portfolio-item
+              .hover-bg
+                a(href='/images/portfolio/01-large.jpg', title='Project Titile', rel='prettyPhoto')
+                  .hover-text
+                    h4 TBD: MVs
+                    small Web design
+                  img(src='/images/portfolio/01-small.jpg', class='img-responsive', alt='project title')
+          .col-sm-6.col-md-3.col-lg-3.web
+            .portfolio-item
+              .hover-bg
+                a(href='/images/portfolio/01-large.jpg', title='Project Titile', rel='prettyPhoto')
+                  .hover-text
+                    h4 TBD: MVs
+                    small Web design
+                  img(src='/images/portfolio/01-small.jpg', class='img-responsive', alt='project title')
+        .portfolio-items
+          .col-sm-6.col-md-3.col-lg-3.app
+            .portfolio-item
+              .hover-bg
+                a(href='/images/portfolio/02-large.jpg', title='Project Titile', rel='prettyPhoto')
+                  .hover-text
+                    h4 TBD: Live movies
+                    small App design
+                  img(src='/images/portfolio/02-small.jpg', class='img-responsive', alt='project title')
+          .col-sm-6.col-md-3.col-lg-3.web
+            .portfolio-item
+              .hover-bg
+                a(href='/images/portfolio/01-large.jpg', title='Project Titile', rel='prettyPhoto')
+                  .hover-text
+                    h4 TBD: MVs
+                    small Web design
+                  img(src='/images/portfolio/01-small.jpg', class='img-responsive', alt='project title')
+
+  //- Biography Section
+  #biography.text-center
+    .container
+      .section-titile.center
+        h2 Biography
+        hr
+      .row
+        .col-md-12.text-center
+          h3 6ow 3id girl (ローミッドガール)
+          img(class='img-responsive', src='/images/about.jpg')
+        .col-md-8.col-md-offset-2
+          .about-text
+            p.text-center
+              |2020年始動。女性ベースシンガーソングライター。
+              br
+              |ベーシストであり、シンガーソングライター。
+              br
+              |アレンジ、ミックス、マスタリング、映像編集等を通じて総合的に世界観を表現する。
+              br
+              |まだ誰も見たことのない世界へ。
+            p.text-center
+              |since 2020. Female bass singer-songwriter.
+              br
+              |She is a bassist and singer-songwriter, and she comprehensively expresses the worldview
+              br
+              |through arrangement, mixing, mastering, and video editing etc...
+              br
+              |A new world that you never seen.
+
+  //- Shop section
+  //- TODO: Replace CSS
+  #shop.text-center
+    .container
+      .section-title.center
+        h2 Shop
+        hr
+      
+      .col-md-8.col-md-offset-2
+        h3 
+          |TBD
+
+  //- Contact section
+  //- TODO: Mail to 6ow3idgirl@gmail.com
+  #contact.text-center
+    .container
+      .section-title.center
+        h2 Contact
+        hr
+      
+      .col-md-8.col-md-offset-2
+        h3 
+          |Get tickets from #[a(href='https://forms.gle/qJMCXeGp9dRbS8nE9') Here]
+
+      .col-md-8.col-md-offset-2
+        .social
+          ul
+            li #[a(href='#') #[i.fab.fa-3x.fa-facebook]]
+            li #[a(href='https://lin.ee/m30atuE') #[i.fab.fa-3x.fa-line]]
+            li #[a(href='https://twitter.com/6ow3idgirl') #[i.fab.fa-3x.fa-twitter]]
+            li #[a(href='https://t.co/n3i6Ulx4Gk?amp=1') #[i.fab.fa-3x.fa-instagram]]
+
+      .col-md-8.col-md-offset-2
+        h3 Feel free to reach out to me !!
+        form(id='contactForm', name='sentMessage', novalidate)
+          .row
+            .col-md-6
+              .form-group
+                input(id='name', class='form-control', type='text', placeholder='YourName', required='required')
+                p.help-block.text-danger
+            .col-md-6
+              .form-group
+                input(id='email', class='form-control', type='email', placeholder='Email', required='required')
+                p.help-block.text-danger
+          .form-group
+            textarea(id='message', class='form-control', name='message', rows='4', placeholder='Message Here ...', required)
+            p.help-block.text-danger
+          #success
+          button(type='submit', class='btn btn-default') Send Message
