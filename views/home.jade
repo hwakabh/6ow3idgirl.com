@@ -38,55 +38,22 @@ html
             .collapse.navbar-collapse.navbar-right.navbar-main-collapse
               ul.nav.navbar-nav
                 li #[a(class='hidden', href='#page-top')]
+                li #[a(class='page-scroll', href='#lives') News]
+                li #[a(class='page-scroll', href='#discography') Music]
+                li #[a(class='page-scroll', href='#portfolio') YouTube]
                 li #[a(class='page-scroll', href='#biography') Biography]
-                li #[a(class='page-scroll', href='#discography') Discography]
-                li #[a(class='page-scroll', href='#lives') Live/Media]
-                li #[a(class='page-scroll', href='#portfolio') Gallary]
+                li #[a(class='page-scroll', href='#shop') Shop]
                 li #[a(class='page-scroll', href='#contact') Contact]
 
-    //- Biography Section
-    #biography.text-center
+    //- News section
+    #lives
       .container
-        .section-titile.center
-          h2 Biography
+        .section-tile.text-center.center
+          h2 News
           hr
+          p
+            |Media information and Live
         .row
-          .col-md-12.text-center
-            h3 About Me
-            img(class='img-responsive', src='/images/about.jpg')
-          .col-md-8.col-md-offset-2
-            .about-text
-              p.text-center
-                |6ow 3id Girl Biography
-                br
-                |Contents here
-          .col-lg-12
-            h3 Histories
-            ul.timeline
-              li
-                .timeline-image
-                  h4 2020/06/10
-                .timeline-panel
-                  .timeline-heading
-                    h4 Boots up
-                    h4.subheading First Live
-                  .timeline-body
-                    p
-                      |Descriptions of first live
-                      br
-                      |messages from roza
-              li.timeline-inverted
-                .timeline-image
-                  h4 2020/06/10
-                .timeline-panel
-                  .timeline-heading
-                    h4 Boots up
-                    h4.subheading First Live
-                  .timeline-body
-                    p
-                      |Descriptions of first live
-                      br
-                      |messages from roza
 
     //- Discography Section
     #discography.text-center
@@ -115,16 +82,6 @@ html
           .col-md-4.col-sm-6.skill
             h4 New Released CD-1
             img(src='/images/portfolio/01-small.jpg', class='img-responsive', alt='project title')
-
-    //- Live/Media Information section
-    #lives
-      .container
-        .section-tile.text-center.center
-          h2 Live/Media
-          hr
-          p
-            |Media information and Live
-        .row
 
     //- Photo section
     #portfolio
@@ -213,6 +170,70 @@ html
                       h4 Off-shot 1
                       small App design
                     img(src='/images/portfolio/02-small.jpg', class='img-responsive', alt='project title')
+
+    //- Biography Section
+    #biography.text-center
+      .container
+        .section-titile.center
+          h2 Biography
+          hr
+        .row
+          .col-md-12.text-center
+            h3 6ow 3id girl (ローミッドガール)
+            img(class='img-responsive', src='/images/about.jpg')
+          .col-md-8.col-md-offset-2
+            .about-text
+              p.text-center
+                |2020年始動。女性ベースシンガーソングライター。
+                br
+                |ベーシストであり、シンガーソングライター。
+                br
+                |アレンジ、ミックス、マスタリング、映像編集等を通じて総合的に世界観を表現する。
+                br
+                |まだ誰も見たことのない世界へ。
+              p.text-center
+                |Boots up 2020, female bass singer songer.
+                br
+                |English description of 6ow-3id-girl
+
+          //- .col-lg-12
+          //-   h3 Histories
+          //-   ul.timeline
+          //-     li
+          //-       .timeline-image
+          //-         h4 2020/06/10
+          //-       .timeline-panel
+          //-         .timeline-heading
+          //-           h4 Boots up
+          //-           h4.subheading First Live
+          //-         .timeline-body
+          //-           p
+          //-             |Descriptions of first live
+          //-             br
+          //-             |messages from roza
+          //-     li.timeline-inverted
+          //-       .timeline-image
+          //-         h4 2020/06/10
+          //-       .timeline-panel
+          //-         .timeline-heading
+          //-           h4 Boots up
+          //-           h4.subheading First Live
+          //-         .timeline-body
+          //-           p
+          //-             |Descriptions of first live
+          //-             br
+          //-             |messages from roza
+
+    //- Shop section
+    //- TODO: Replace CSS
+    #shop.text-center
+      .container
+        .section-title.center
+          h2 Shop
+        
+        .col-md-8.col-md-offset-2
+          h3 
+            |TBD
 
     //- Contact section
     //- TODO: Mail to 6ow3idgirl@gmail.com
