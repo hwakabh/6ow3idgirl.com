@@ -334,7 +334,7 @@ ol.type li a:hover {
   transform: scale(1.1);
 }
 .portfolio-item .hover-bg {
-  height: 260px;
+  height: auto;
   overflow: hidden;
   position: relative;
 }
@@ -364,24 +364,8 @@ ol.type li a:hover {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-.hover-bg .hover-text>i {
-  opacity: 0;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>i {
-  opacity: 1;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-}
 .hover-bg:hover .hover-text {
   opacity: 1;
-}
-#portfolio i.fa {
-  font-size: 20px;
-  padding: 5px;
 }
 
 /* Biography Section */
@@ -402,7 +386,7 @@ ol.type li a:hover {
   margin-bottom: 30px;
 }
 
-/* Shop Section */
+/* Shop Section
 #shop {
   color: #121d1f;
 }
@@ -436,7 +420,7 @@ ol.type li a:hover {
 a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
   outline: none;
   outline-offset: none;
-}
+} */
 
 /* Contact Section */
 #contact {
