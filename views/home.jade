@@ -8,6 +8,12 @@ block content
         h2 News
         hr
       .row
+        //- TODO: Update latest news
+        //-> Pickup artist
+          //-> https://big-up.style/zine/article/pickupartist/20200513-6663
+          //-> https://big-up.style/zine/article/playlist/20200514-1119
+        //-> Instagram uses
+          //-> https://www.instagram.com/albacgfv/?hl=en
         .col-md-12
           h5
             |2020/04/25 1st single "whack a mole” is released !!
@@ -20,11 +26,11 @@ block content
         .col-md-8.col-md-offset-2
           .social
             ul
-              //- TODO: Added href to music download pagess
-              //- Spotify, Apple Music, AWA, LINE Music, Amazon Music
-              li #[a(href='#') #[i.fab.fa-3x.fa-spotify]]
-              li #[a(href='#') #[i.fab.fa-3x.fa-apple]]
-              li #[a(href='#') #[i.fab.fa-3x.fa-google]]
+              li #[a(href='https://open.spotify.com/track/5YK2Do5B5gJwW7ue2Budi1') #[img(src='/images/icons/spotify-icon.png', class='streaming-icons')]]
+              li #[a(href='https://music.apple.com/jp/album/whack-a-mole/1506539839') #[img(src='/images/icons/applemusic-icon.png', class='streaming-icons')]]
+              li #[a(href='https://s.awa.fm/album/778099dbe493b6030087/') #[img(src='/images/icons/awa-icon.png', class='streaming-icons')]]
+              li #[a(href='https://music.line.me/album/mb0000000001bd1c13') #[img(src='/images/icons/linemusic-icon.png', class='streaming-icons')]]
+              li #[a(href='https://music.amazon.co.jp/albums/B086SVQYBM?trackAsin=B086SX2948') #[img(src='/images/icons/amazonmusic-icon.png', class='streaming-icons')]]
         .col-md-12
           p
             |Another apps can be available from #[a(href="https://big-up.style/MJV3uKqegi") BIG UP !!] website.
@@ -35,17 +41,33 @@ block content
       .section-title.center
         h2 Music
         hr
-        p
-          |Also check #[a(href='http://soundcloud.com/6ow3idgirl') SoundCloud] and #[a(href='https://www.youtube.com/channel/UC_vCY6ONyh2STh02OFTdSTA?view_as=subscriber') Official YouTube Channel] !! 
       .row
-        //- TODO: Added href to music download pagess
-        //- Spotify, Apple Music, AWA, LINE Music, Amazon Music
         .col-md-4.col-sm-6.skill
           h4 Whack a mole
           img(src='/images/portfolio/01-jacket.jpg', class='img-responsive', alt='project title')
+          br
+          .streaming
+            ul
+              li #[a(href='https://open.spotify.com/track/5YK2Do5B5gJwW7ue2Budi1') #[img(src='/images/icons/spotify-icon.png', class='streaming-icons')]]
+              li #[a(href='https://music.apple.com/jp/album/whack-a-mole/1506539839') #[img(src='/images/icons/applemusic-icon.png', class='streaming-icons')]]
+              li #[a(href='https://s.awa.fm/album/778099dbe493b6030087/') #[img(src='/images/icons/awa-icon.png', class='streaming-icons')]]
+              li #[a(href='https://music.line.me/album/mb0000000001bd1c13') #[img(src='/images/icons/linemusic-icon.png', class='streaming-icons')]]
+              li #[a(href='https://music.amazon.co.jp/albums/B086SVQYBM') #[img(src='/images/icons/amazonmusic-icon.png', class='streaming-icons')]]
+          br
+          a(href="https://big-up.style/MJV3uKqegi") Other Media
         .col-md-4.col-sm-6.skill
           h4 peko-niko-boo!
           img(src='/images/portfolio/02-jacket.jpg', class='img-responsive', alt='project title')
+          br
+          .streaming
+            ul
+              li #[a(href='https://open.spotify.com/album/6NoDKe5BcXywPhkuRotqsG?si=8mf1PwEjTCunnYpPe0SZpQ') #[img(src='/images/icons/spotify-icon.png', class='streaming-icons')]]
+              li #[a(href='https://music.apple.com/jp/album/peko-niko-boo/1509864476?i=1509864477') #[img(src='/images/icons/applemusic-icon.png', class='streaming-icons')]]
+              li #[a(href='https://s.awa.fm/album/35637d0655dd0876e238') #[img(src='/images/icons/awa-icon.png', class='streaming-icons')]]
+              li #[a(href='https://music.line.me/album/mb0000000001bffda4') #[img(src='/images/icons/linemusic-icon.png', class='streaming-icons')]]
+              li #[a(href='https://music.amazon.co.jp/albums/B087MYD39H') #[img(src='/images/icons/amazonmusic-icon.png', class='streaming-icons')]]
+          br
+          a(href="https://big-up.style/AckwoT67zb") Other Media
         .col-md-4.col-sm-6.skill
           h4 Third Release coming soon ... !!
           img(src='/images/coming-soon-lg-rotate.png', class='img-responsive', alt='project title')
@@ -149,7 +171,6 @@ block content
       //- .col-md-8.col-md-offset-2
       //-   h3 
       //-     |Get tickets from #[a(href='https://forms.gle/qJMCXeGp9dRbS8nE9') Here]
-
       .col-md-8.col-md-offset-2
         .social
           ul
@@ -157,20 +178,19 @@ block content
             li #[a(href='https://lin.ee/m30atuE') #[i.fab.fa-3x.fa-line]]
             li #[a(href='https://twitter.com/6ow3idgirl') #[i.fab.fa-3x.fa-twitter]]
             li #[a(href='https://t.co/n3i6Ulx4Gk?amp=1') #[i.fab.fa-3x.fa-instagram]]
-
-      .col-md-8.col-md-offset-2
-        form(id='contactForm', name='sentMessage', novalidate)
-          .row
-            .col-md-6
-              .form-group
-                input(id='name', class='form-control', type='text', placeholder='YourName', required='required')
-                p.help-block.text-danger
-            .col-md-6
-              .form-group
-                input(id='email', class='form-control', type='email', placeholder='Email', required='required')
-                p.help-block.text-danger
-          .form-group
-            textarea(id='message', class='form-control', name='message', rows='4', placeholder='Message Here ...', required)
-            p.help-block.text-danger
-          #success
-          button(type='submit', class='btn btn-default') Send Message
+        .contact-form
+          form(id='contactForm', name='sentMessage', novalidate)
+            .row
+              .col-md-6
+                .form-group
+                  input(id='name', class='form-control', type='text', placeholder='YourName', required='required')
+                  p.help-block.text-danger
+              .col-md-6
+                .form-group
+                  input(id='email', class='form-control', type='email', placeholder='Email', required='required')
+                  p.help-block.text-danger
+            .form-group
+              textarea(id='message', class='form-control', name='message', rows='4', placeholder='Message Here ...', required)
+              p.help-block.text-danger
+            #success
+            button(type='submit', class='btn btn-default') Send Message

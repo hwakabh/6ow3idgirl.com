@@ -130,7 +130,7 @@ hr {
 .navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
   outline: 0;
   background-color: transparent;
-  color: #fc1afc;
+  color: #ee82ee;
 }
 .navbar-custom .nav li.active {
   outline: 0;
@@ -151,8 +151,8 @@ hr {
   border-radius: 0;
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
-  color: #fc1afc;
-  background-color: #ffffff;
+  color: #fff;
+  background-color: #fc1afc;
   border-color: #fc1afc;
 }
 /* .btn-primary {
@@ -197,7 +197,7 @@ hr {
 
 #lives, #discography, #portfolio, #biography, #shop, #contact {
   background: url(../images/section-bg.jpg) center top;
-  padding: 100px 0;
+  padding: 120px 0 20px 0;
 }
 
 /* News Section */
@@ -214,6 +214,10 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   display: inline-block;
+}
+#lives img.streaming-icons{
+  height: 50px;
+  width: 50px;
 }
 #lives p {
   margin-top: 20px;
@@ -250,13 +254,21 @@ hr {
 #discography {
   color: #121d1f;
 }
-#discography .skill {
+/* #discography .skill {
   margin-bottom: 40px;
   text-align: center;
   padding: 10px;
-}
-#discography .skill h4 {
+} */
+/* #discography .skill h4 {
   font-weight: 600;
+} */
+#discography .streaming ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+#discography img.streaming-icons{
+  height: 50px;
+  width: 50px;
 }
 
 /* YOUTUBE Section */
@@ -280,11 +292,11 @@ ol.type li a {
   padding: 6px 14px;
 }
 ol.type li a.active {
-  background: #121d1f;
+  background: #fc1afc;
   color: #fff;
 }
 ol.type li a:hover {
-  background: #121d1f;
+  background: #fc1afc;
   color: #fff;
 }
 .isotope-item {
@@ -501,15 +513,16 @@ color: #2c3e50;
 }
 #contact .btn {
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #fc1afc;
   border-radius: 0;
   padding: 10px 20px;
-  color: #fff;
+  color: #fc1afc;
   margin-top: 15px;
 }
 #contact .btn:hover, #contact .btn:focus {
-  background-color: #121d1f;
-  border: 1px solid #121d1f;
+  background-color: #fc1afc;
+  border: 1px solid #fc1afc;
+  color: #fff;
 }
 .btn:active, .btn.active {
   background-image: none;
