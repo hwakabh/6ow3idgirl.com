@@ -225,7 +225,7 @@ hr {
 }
 #lives .social ul li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 #lives .social i.fa {
   font-size: 30px;
@@ -254,14 +254,9 @@ hr {
 #discography {
   color: #121d1f;
 }
-/* #discography .skill {
-  margin-bottom: 40px;
-  text-align: center;
-  padding: 10px;
-} */
-/* #discography .skill h4 {
-  font-weight: 600;
-} */
+#discography .streaming {
+  margin-bottom: 50px;
+}
 #discography .streaming ul li {
   display: inline-block;
   margin: 0 10px;
