@@ -222,10 +222,6 @@ hr {
   margin-bottom: 20px;
   display: inline-block;
 }
-#lives img.streaming-icons{
-  height: 50px;
-  width: 50px;
-}
 #lives p {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -264,16 +260,9 @@ hr {
 #discography {
   color: #121d1f;
 }
-#discography .streaming {
-  margin-bottom: 50px;
-}
-#discography .streaming ul li {
+#discography .social ul li {
   display: inline-block;
   margin: 0 10px;
-}
-#discography img.streaming-icons{
-  height: 50px;
-  width: 50px;
 }
 
 /* YOUTUBE Section */
