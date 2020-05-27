@@ -214,6 +214,9 @@ hr {
   margin-top: 10px;
   margin-left: 10px;
 }
+#lives .articles p {
+  text-align: left;
+}
 #lives img {
   /* border-radius: 50%; */
   width: 400px;
