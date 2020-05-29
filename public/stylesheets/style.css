@@ -272,6 +272,13 @@ hr {
 #portfolio {
   color: #121d1f;
 }
+#portfolio .social {
+  margin-bottom: 20px;
+}
+#portfolio .social ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
 .categories {
   padding-bottom: 30px;
   text-align: center;
@@ -497,7 +504,7 @@ color: #2c3e50;
 }
 #contact .social ul li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 #contact .social i.fa {
   font-size: 30px;

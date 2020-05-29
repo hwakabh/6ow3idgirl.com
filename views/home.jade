@@ -74,8 +74,6 @@ block content
                   .top-news
                     iframe(width="560", height="315", src="https://www.youtube.com/embed/g1EETsO1Xx8", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen='')
                   .social
-                    ul
-                      li #[a(href='https://www.youtube.com/watch?v=g1EETsO1Xx8&feature=emb_title', target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-youtube]]
                     br
                     ul
                       li #[a(href='https://open.spotify.com/album/6NoDKe5BcXywPhkuRotqsG?si=8mf1PwEjTCunnYpPe0SZpQ', target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-spotify]]
@@ -127,8 +125,9 @@ block content
       .section-title.text-center.center
         h2 YOUTUBE
         hr
-        p
-          |#[a(href='https://www.youtube.com/channel/UC_vCY6ONyh2STh02OFTdSTA/featured', target="_blank", rel="noopener noreferrer") OFFICIAL YOUTUBE CHANNEL]
+      .social.text-center.center
+        ul
+          li #[a(href='https://www.youtube.com/watch?v=g1EETsO1Xx8&feature=emb_title', target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-youtube]]
       .categories
         ul.cat
           li
