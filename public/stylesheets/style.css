@@ -191,6 +191,9 @@ hr {
   background-size: cover;
   -o-background-size: cover;
 }
+.intro-text {
+  margin-top: 150px;
+}
 .section-title.center {
   padding: 25px 0 45px 0;
 }
