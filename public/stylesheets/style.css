@@ -92,6 +92,9 @@ hr {
   top: 0;
   width: 100%
 }
+.navbar-header i.fa-bars {
+  color: #fff;
+}
 .navbar-custom {
   margin-bottom: 0;
   background-color: #fc1afc;
