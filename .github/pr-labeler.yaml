@@ -1,0 +1,26 @@
+# File matches
+ci:
+- changed-files:
+  - any-glob-to-any-file: ['.github/**/*']
+- head-branch: ['^ci/']
+
+deps:
+- changed-files:
+  - any-glob-to-any-file: ['package.json', 'package-lock.json']
+- head-branch: ['^renovate/']
+
+docs:
+- changed-files:
+  - any-glob-to-any-file: ['**/README.md', 'app-diagram.drawio.svg']
+
+tests:
+- changed-files:
+  - any-glob-to-any-file: ['tests/**/*']
+
+
+# Branch name matches
+renovate:
+- head-branch: ['^renovate/']
+
+bugs:
+- head-branch: ['^fix/', '^hotfix/']
