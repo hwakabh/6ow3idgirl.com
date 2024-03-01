@@ -10,6 +10,11 @@
     "description": "Something isn't working"
   },
   {
+    "name": "build",
+    "color": "7057ff",
+    "description": "Features depending on application runtimes"
+  },
+  {
     "name": "chore",
     "color": "d1a995",
     "description": "Minor activities not related to core logics"
@@ -18,11 +23,6 @@
     "name": "ci",
     "color": "e9faaf",
     "description": "Topics on workflows or automations"
-  },
-  {
-    "name": "build",
-    "color": "7057ff",
-    "description": "Features depending on application runtimes"
   },
   {
     "name": "deps",
