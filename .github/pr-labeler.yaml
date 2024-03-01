@@ -1,4 +1,8 @@
 # File matches
+build:
+- changed-files:
+  - any-glob-to-any-file: ['manifests/**/*']
+
 ci:
 - changed-files:
   - any-glob-to-any-file: ['.github/**/*']
