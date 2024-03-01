@@ -1,9 +1,10 @@
 name: Publish
 
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
+  pull_request:
   workflow_dispatch:
 
 jobs:
@@ -20,15 +21,16 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-        # https://github.com/docker/login-action#github-container-registry
 
       - name: Install pack
         uses: buildpacks/github-actions/setup-pack@v5.5.3
-        # https://github.com/buildpacks/github-actions#setup-pack-cli-action
 
+      # need GOOGLE_RUNTIME explicity
+      # https://github.com/GoogleCloudPlatform/buildpacks/issues/220#issuecomment-1199867259
       - name: Publish packages
         run: |
           pack build ghcr.io/hwakabh/6ow3idgirl:latest \
             --builder gcr.io/buildpacks/builder:latest \
             --path . \
+            --env GOOGLE_RUNTIME=nodejs \
             --publish
