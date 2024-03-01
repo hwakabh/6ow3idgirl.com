@@ -29,7 +29,7 @@ jobs:
 
       - name: Publish packages
         run: |
-          pack build ghcr.io/hwakabh/6ow3idGirl:latest \
+          pack build ghcr.io/hwakabh/6ow3idgirl:latest \
             --builder gcr.io/buildpacks/builder:latest \
             --path . \
             --publish
