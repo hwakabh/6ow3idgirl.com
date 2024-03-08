@@ -2,7 +2,7 @@
 # regexp patterns had basically been aligned for Conventional Commits and Semantic PR
 # Nothing matches, since expecting to add manually
 breaking:
-- '/(?!)/'
+- '/(\!)/'
 
 bugs:
 - '(fix:)'
