@@ -4,7 +4,8 @@ import { AppModule } from './app.module';
 
 // Express general
 import { NestExpressApplication } from '@nestjs/platform-express';
-import { Request, Response, NextFunction } from "express";
+import express from 'express';
+// import { Request, Response, NextFunction } from "express";
 
 // middlewares by express-generator
 // import createHttpError from "http-errors";
@@ -15,6 +16,9 @@ async function bootstrap() {
   // https://docs.nestjs.com/first-steps#platform
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
   // const app = await NestFactory.create(AppModule);
+
+  app.use(express.json());
+  app.use(express.urlencoded({ extended: false }));
 
   // https://docs.nestjs.com/techniques/mvc
   // https://github.com/nestjs/nest/tree/master/sample/15-mvc
