@@ -1,6 +1,0 @@
----
-runtime: nodejs12
-env: standard
-entrypoint: node bin/www
-# env_variables:
-#   NODE_SECRET: berglas://bucket-berglas/6ow3idGirl_node_secret
