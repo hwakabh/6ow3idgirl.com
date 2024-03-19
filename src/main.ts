@@ -11,6 +11,7 @@ import express from 'express';
 // import createHttpError from "http-errors";
 import cookieParser from "cookie-parser";
 import logger from "morgan";
+import Helmet from "helmet";
 
 async function bootstrap() {
   // https://docs.nestjs.com/first-steps#platform
@@ -29,9 +30,7 @@ async function bootstrap() {
 
   app.use(cookieParser());
   app.use(logger("dev"));
-
-  // TODO: should be replaced with helmet
-  app.disable('x-powered-by');
+  app.use(Helmet());
 
   // TODO: fix 404 with import controllers(routers)
   // // Error handler
