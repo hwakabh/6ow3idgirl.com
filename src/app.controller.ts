@@ -1,5 +1,5 @@
 // Replacement of routes/index.js
-import { Controller, Get, Render } from '@nestjs/common';
+import { Controller, Get, Post, Render } from '@nestjs/common';
 import { AppService } from './services/app.service';
 import { HealthService } from './services/healthz.service';
 
