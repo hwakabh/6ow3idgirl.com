@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.0](https://github.com/hwakabh/6ow3idGirl/compare/6ow3idgirl-v1.0.0...6ow3idgirl-v1.1.0) (2024-03-20)
+
+
+### Features
+
+* added features for sending email with axios in mailService. ([3a44b95](https://github.com/hwakabh/6ow3idGirl/commit/3a44b9531f22f543d83e4cb15551b82571a0c7d3))
+* **deploy:** added helmet with TypeScript. ([937a392](https://github.com/hwakabh/6ow3idGirl/commit/937a3923361f9b469f47fd60a24b9a1c34d19bac))
+* **services:** added service skeleton for sending email. ([c576437](https://github.com/hwakabh/6ow3idGirl/commit/c5764371c9b3609329230b13cea43b5eae4be05e))
+* **types:** added models for responses with application root. ([46d72a3](https://github.com/hwakabh/6ow3idGirl/commit/46d72a38df2b7081dee6a2f2565f8dcc726c7abe))
+
 ## [1.0.0](https://github.com/hwakabh/6ow3idGirl/compare/6ow3idgirl-v0.1.0...6ow3idgirl-v1.0.0) (2024-03-08)
 
 
