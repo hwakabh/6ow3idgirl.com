@@ -3,6 +3,10 @@ export interface Contact {
   name: string
 }
 
+export interface MailBody extends Contact {
+  message: string
+}
+
 export interface ReqBodySendMail {
   sender: Contact;
   to: Contact[];

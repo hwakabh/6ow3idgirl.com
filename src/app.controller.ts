@@ -1,11 +1,11 @@
 // Replacement of routes/index.js
-import { Controller, Get, Post, Render } from '@nestjs/common';
+import { Body, Controller, Get, Post, Render } from '@nestjs/common';
 
 import { AppRootResponse } from './models/app.model';
 import { HealthService } from './services/healthz.service';
 import { HealthCheckResponse } from 'src/models/health.model';
 import { MailService } from './services/mail.service';
-import { ReqBodySendMail, RespBodySendMail } from './models/mail.model';
+import { MailBody, ReqBodySendMail, RespBodySendMail } from './models/mail.model';
 
 @Controller()
 export class AppController {
@@ -27,19 +27,21 @@ export class AppController {
   }
 
   @Post('/mail')
-  mail(): Promise<RespBodySendMail> {
-  // TODO: Fetch data from views
+  mail(
+    @Body() mailBody: MailBody
+  ): Promise<RespBodySendMail> {
+
     const body: ReqBodySendMail = {
       sender: {
-        email: 'test@example.com',
-        name: 'hwakabh'
+        email: mailBody.email,
+        name: mailBody.name
       },
       to: [{
         email: 'hrykwkbys1024@gmail.com',
         name: 'admin'
       }],
-      subject: '[Brevo] test mail',
-      textContent: 'This is a test mail body.'
+      subject: `[6ow3idgirl] Submission via Contact Form: from ${mailBody.name}`,
+      textContent: mailBody.message
     }
 
     return this.mailService.sendmail(body);

@@ -13,6 +13,8 @@ export class MailService {
   ) {}
 
   async sendmail(payload: ReqBodySendMail): Promise<RespBodySendMail> {
+    console.log(payload);
+
     const url: string = 'https://api.brevo.com/v3/smtp/email';
     const hs: object = {
       "Content-Type": "application/json",
