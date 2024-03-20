@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { AppRootResponse } from 'src/models/app.model';
 
 @Injectable()
 export class AppService {
-  // should be replaced from object to Types
-  root(): object {
+  root(): AppRootResponse {
     return { message: 'with Nest' };
   }
 }

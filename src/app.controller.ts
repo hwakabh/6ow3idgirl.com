@@ -2,6 +2,7 @@
 import { Controller, Get, Post, Render } from '@nestjs/common';
 
 import { AppService } from './services/app.service';
+import { AppRootResponse } from './models/app.model';
 import { HealthService } from './services/healthz.service';
 import { HealthCheckResponse } from 'src/models/health.model';
 import { MailService } from './services/mail.service';
@@ -18,7 +19,7 @@ export class AppController {
   // Note that responsibility of render is in controller, not services
   @Get()
   @Render('home')
-  root() : object {
+  root() : AppRootResponse {
     return this.appService.root();
   }
 
