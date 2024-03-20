@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.2.0](https://github.com/hwakabh/6ow3idGirl/compare/6ow3idgirl-v1.1.0...6ow3idgirl-v1.2.0) (2024-03-20)
+
+
+### Features
+
+* **build:** added sealed-secrets and enabled to fetch them from applications. ([8c647d3](https://github.com/hwakabh/6ow3idGirl/commit/8c647d391c65877afd88b858fbe4ddf64a09438b))
+* enabled to call controller endpoint for sending mail from view. ([21cb3e9](https://github.com/hwakabh/6ow3idGirl/commit/21cb3e9011403ffbd384373eab4ad10cf5225b1e))
+* enabled to fetch user data in controllers. ([3319ace](https://github.com/hwakabh/6ow3idGirl/commit/3319ace3c55d053297a1306b3e795b0eea7e005e))
+
+
+### Bug Fixes
+
+* **deps:** made @nestjs/cli as dependencies instead of devDependencies. ([773ba1c](https://github.com/hwakabh/6ow3idGirl/commit/773ba1cd7f736067c982d601cdc99343459eb812))
+
 ## [1.1.0](https://github.com/hwakabh/6ow3idGirl/compare/6ow3idgirl-v1.0.0...6ow3idgirl-v1.1.0) (2024-03-20)
 
 
