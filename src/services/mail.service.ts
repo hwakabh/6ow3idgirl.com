@@ -21,11 +21,8 @@ export class MailService {
       "Accept": "application/json",
       "api-key": this.configService.get('BREVO_API_KEY')
     };
-    // const { data }  = await firstValueFrom(this.httpService.post(url, payload, {headers: hs}));
-    const data = {
-      messageId: '<202403201309.80976496848@smtp-relay.mailin.fr>'
-    }
-    // console.log(data);
+    const { data }  = await firstValueFrom(this.httpService.post(url, payload, {headers: hs}));
+    console.log(data);
 
     return data
   }
