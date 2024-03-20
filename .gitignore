@@ -3,6 +3,9 @@
 .vscode/*
 *.code-workspace
 
+## --- Deployment
+secret.yaml
+
 ## --- .gitignore templates for node
 # Logs
 logs
