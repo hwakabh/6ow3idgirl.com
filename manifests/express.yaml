@@ -22,9 +22,9 @@ spec:
       - image: ghcr.io/hwakabh/6ow3idgirl:latest
         imagePullPolicy: Always
         name: express
-        # envFrom:
-        #   - secretRef:
-        #       name: app-secret
+        envFrom:
+          - secretRef:
+              name: app-secret
         readinessProbe:
           httpGet:
             path: /healthz
