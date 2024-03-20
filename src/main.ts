@@ -14,16 +14,11 @@ import logger from "morgan";
 import Helmet from "helmet";
 
 async function bootstrap() {
-  // https://docs.nestjs.com/first-steps#platform
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
-  // const app = await NestFactory.create(AppModule);
 
   app.use(express.json());
   app.use(express.urlencoded({ extended: false }));
 
-  // https://docs.nestjs.com/techniques/mvc
-  // https://github.com/nestjs/nest/tree/master/sample/15-mvc
-  // __dirname returns 'PROJECT_ROOT/dist'
   app.useStaticAssets(join(__dirname, '..', '/src/public'));
   app.setBaseViewsDir(join(__dirname, '..', '/src/views'));
   app.setViewEngine('pug');
@@ -32,8 +27,7 @@ async function bootstrap() {
   app.use(logger("dev"));
   app.use(Helmet());
 
-  // TODO: fix 404 with import controllers(routers)
-  // // Error handler
+  // // TODO: fix 404 with import controllers(routers)
   // app.use((req: Request, res: Response, next: NextFunction) =>
   //   next(createHttpError(404))
   // );
