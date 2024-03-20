@@ -13,14 +13,19 @@ export class MailService {
   ) {}
 
   async sendmail(payload: ReqBodySendMail): Promise<RespBodySendMail> {
+    console.log(payload);
+
     const url: string = 'https://api.brevo.com/v3/smtp/email';
     const hs: object = {
       "Content-Type": "application/json",
       "Accept": "application/json",
       "api-key": this.configService.get('BREVO_API_KEY')
     };
-    const { data }  = await firstValueFrom(this.httpService.post(url, payload, {headers: hs}));
-    console.log(data);
+    // const { data }  = await firstValueFrom(this.httpService.post(url, payload, {headers: hs}));
+    const data = {
+      messageId: '<202403201309.80976496848@smtp-relay.mailin.fr>'
+    }
+    // console.log(data);
 
     return data
   }
