@@ -10,6 +10,8 @@ import { MovieEntity } from './entities/movies.entity';
 import { AppController } from './app.controller';
 import { HealthService } from './services/healthz.service';
 import { MailService } from './services/mail.service';
+import { MusicService } from './services/music.db.service';
+import { MovieService } from './services/movie.db.service';
 
 @Module({
   imports: [
@@ -25,6 +27,8 @@ import { MailService } from './services/mail.service';
   providers: [
     HealthService,
     MailService,
+    MusicService,
+    MovieService,
   ],
 })
 export class AppModule {}
