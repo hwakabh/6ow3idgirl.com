@@ -4,6 +4,8 @@ import { ConfigModule } from '@nestjs/config';
 
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { typeormConfig } from './typeOrm.config';
+import { MusicEntity } from './entities/musics.entity';
+import { MovieEntity } from './entities/movies.entity';
 
 import { AppController } from './app.controller';
 import { HealthService } from './services/healthz.service';
@@ -16,6 +18,8 @@ import { MailService } from './services/mail.service';
     ConfigModule.forRoot({
       isGlobal: true
     }),
+    // TODO: added DTO & dedicated modules/services
+    TypeOrmModule.forFeature([MusicEntity, MovieEntity]),
   ],
   controllers: [AppController],
   providers: [
