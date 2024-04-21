@@ -6,15 +6,15 @@
     "start": "nest start"
   },
   "engines": {
-    "node": "20.12.1"
+    "node": "20.12.2"
   },
   "dependencies": {
     "@nestjs/axios": "^3.0.2",
     "@nestjs/cli": "^10.3.2",
-    "@nestjs/common": "^10.3.7",
+    "@nestjs/common": "^10.3.8",
     "@nestjs/config": "^3.2.2",
-    "@nestjs/core": "^10.3.7",
-    "@nestjs/platform-express": "^10.3.7",
+    "@nestjs/core": "^10.3.8",
+    "@nestjs/platform-express": "^10.3.8",
     "axios": "^1.6.8",
     "cookie-parser": "~1.4.6",
     "debug": "~4.3.4",
@@ -32,8 +32,8 @@
     "@types/helmet": "^4.0.0",
     "@types/http-errors": "^2.0.4",
     "@types/morgan": "^1.9.9",
-    "@types/node": "^20.12.5",
+    "@types/node": "^20.12.7",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.5"
   }
 }
