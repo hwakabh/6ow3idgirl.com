@@ -17,7 +17,7 @@ TBD
 
 - Install `nodebrew`
   - Install specific version of Node.js, where runtime definitions are in `package.json`
-  - Note after installation of nodebrew, we can use `node` & `npm` commands
+  - Note that after installation of nodebrew, we can use `node` & `npm` commands
     - Please make sure of verifying your Node.js version with the command `node --version`
   - As you're using another Node.js version controlling systems, like `nvm` or `nodist`, please official references of them
 
