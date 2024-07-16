@@ -4,7 +4,7 @@ Official Homepage of 6ow3idgirl
 ***
 
 ## Environments
-TBD
+Static webpage with Nest, on GKE (Google Kubernetes Engine)
 
 ***
 
