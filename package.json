@@ -6,7 +6,7 @@
     "start": "nest start"
   },
   "engines": {
-    "node": "20.15.1"
+    "node": "20.16.0"
   },
   "dependencies": {
     "@nestjs/axios": "^3.0.2",
@@ -32,8 +32,8 @@
     "@types/helmet": "^4.0.0",
     "@types/http-errors": "^2.0.4",
     "@types/morgan": "^1.9.9",
-    "@types/node": "^20.14.11",
+    "@types/node": "^20.14.12",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.4"
   }
 }
