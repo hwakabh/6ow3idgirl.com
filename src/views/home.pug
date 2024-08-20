@@ -39,87 +39,19 @@ block content
         h2 MUSIC
         hr
       .row
-        .col-md-4.col-sm-6
-          h4 Whack a mole
-          img(src='/images/portfolio/01-jacket.jpg', class='img-responsive', alt='Whack a mole')
-          br
-          .social
-            ul
-              li #[a(href='https://open.spotify.com/track/5YK2Do5B5gJwW7ue2Budi1', target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-spotify]]
-              li #[a(href='https://music.apple.com/jp/album/whack-a-mole/1506539839', target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-apple]]
-              li #[a(href='https://music.line.me/album/mb0000000001bd1c13', target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-line]]
-              li #[a(href='https://music.amazon.co.jp/albums/B086SVQYBM', target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-amazon]]
-            a(href="https://big-up.style/MJV3uKqegi", target="_blank", rel="noopener noreferrer") Other Media
-        .col-md-4.col-sm-6
-          h4 peko-niko-boo!
-          img(src='/images/portfolio/02-jacket.jpg', class='img-responsive', alt='peko-niko-bool')
-          br
-          .social
-            ul
-              li #[a(href='https://open.spotify.com/album/6NoDKe5BcXywPhkuRotqsG?si=8mf1PwEjTCunnYpPe0SZpQ', target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-spotify]]
-              li #[a(href='https://music.apple.com/jp/album/peko-niko-boo/1509864476?i=1509864477', target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-apple]]
-              li #[a(href='https://music.line.me/album/mb0000000001bffda4', target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-line]]
-              li #[a(href='https://music.amazon.co.jp/albums/B087MYD39H', target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-amazon]]
-            a(href="https://big-up.style/AckwoT67zb", target="_blank", rel="noopener noreferrer") Other Media
-        .col-md-4.col-sm-6
-          h4 SEQUIN BRANDY
-          img(src='/images/portfolio/03-jacket.jpg', class='img-responsive', alt='SUQUIN BRANDY')
-          br
-          .social
-            ul
-              li #[a(href="https://open.spotify.com/album/0rLpMX7u2rBTHgOOc1lcns", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-spotify]]
-              li #[a(href="https://music.apple.com/jp/album/sequin-brandy-single/1513859617", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-apple]]
-              li #[a(href="https://music.line.me/album/mb0000000001c5848a?track=mt00000000111b16", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-line]]
-              li #[a(href="https://music.amazon.co.jp/albums/B088RCH5P3", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-amazon]]
-            a(href="https://big-up.style/ZHB5DIsIsS", target="_blank", rel="noopener noreferrer") Other Media
+        each m in musics.data
+          .col-md-4.col-sm-6
+            h4 #{m.title}
+            img(src=`${m.url_local}`, class='img-responsive', alt=`${m.title}`)
+            br
+            .social
+              ul
+                li #[a(href=`${m.url_spotify}`, target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-spotify]]
+                li #[a(href=`${m.url_apple}`, target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-apple]]
+                li #[a(href=`${m.url_line}`, target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-line]]
+                li #[a(href=`${m.url_amazon}`, target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-amazon]]
+              a(href=`${m.url_bigup}`, target="_blank", rel="noopener noreferrer") Other Media
 
-      .row
-        .col-md-4.col-sm-6
-          h4 Drowning in Blue
-          img(src='/images/portfolio/04-jacket.jpg', class='img-responsive', alt='Drowing in Blue')
-          br
-          .social
-            ul
-              li #[a(href="https://open.spotify.com/album/4fZXd8P4tx9ct9Mxsg8vOO?si=I63Re79CSca5srCrS_b52A", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-spotify]]
-              li #[a(href="https://music.apple.com/jp/album/drowning-in-blue/1518168440?i=1518168441", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-apple]]
-              li #[a(href="https://music.line.me/album/mb0000000001cb0bed?track=mt000000001150d765", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-line]]
-              li #[a(href="https://music.amazon.co.jp/albums/B08B4991J8", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-amazon]]
-            a(href="https://big-up.style/fyLoVMb3jM", target="_blank", rel="noopener noreferrer") Other Media
-        .col-md-4.col-sm-6
-          h4 Sunny Puddle
-          img(src='/images/portfolio/05-jacket.jpg', class='img-responsive', alt='Sunny Puddle')
-          br
-          .social
-            ul
-              li #[a(href="https://open.spotify.com/album/5CByIiBsjhesmuRWQ6nTTF", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-spotify]]
-              li #[a(href="https://music.apple.com/jp/album/sunny-puddle-single/1530155633", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-apple]]
-              li #[a(href="https://music.line.me/webapp/album/mb0000000001da02d8", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-line]]
-              li #[a(href="https://music.amazon.co.jp/albums/B08H8QCD7P", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-amazon]]
-            a(href="https://big-up.style/qm0FTyvt4s", target="_blank", rel="noopener noreferrer") Other Media
-        .col-md-4.col-sm-6
-          h4 SWEET DREAMS
-          img(src='/images/portfolio/06-jacket.jpg', class='img-responsive', alt='SWEET DREAMS')
-          br
-          .social
-            ul
-              li #[a(href="https://open.spotify.com/album/1yBTxDxMf8ZHPLFlAJLQIr?si=Rgolyke2RSyXYCMPu-5XaQ&nd=1", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-spotify]]
-              li #[a(href="https://music.apple.com/jp/album/sweet-dreams-single/1548442381?l=jp", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-apple]]
-              li #[a(href="https://music.line.me/webapp/album/mb0000000001f34439", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-line]]
-              li #[a(href="https://music.amazon.co.jp/albums/B08SHCBF7K", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-amazon]]
-            a(href="https://big-up.style/musics/445751", target="_blank", rel="noopener noreferrer") Other Media
-
-      .row
-        .col-md-4.col-sm-6
-          h4 Whack a mole
-          img(src='/images/portfolio/07-jacket.jpg', class='img-responsive', alt='ANTA NANKA DAIKIRAI')
-          br
-          .social
-            ul
-              li #[a(href="https://open.spotify.com/album/2HsWYZSuSrAshyqmpu18Sg?si=-kzHPO1oRjKOFteysPcCGw&nd=1", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-spotify]]
-              li #[a(href="https://music.apple.com/jp/album/anta-nanka-daikirai-single/1564692226?l=en&ls=1&app=music", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-apple]]
-              li #[a(href="https://music.line.me/webapp/album/mb00000000021bbec7", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-line]]
-              li #[a(href="https://music.amazon.co.jp/albums/B093GW79N2?marketplaceId=A1VC38T7YXB528&musicTerritory=JP", target="_blank", rel="noopener noreferrer") #[i.fab.fa-3x.fa-amazon]]
-            a(href="https://big-up.style/0MQWuHcwbm", target="_blank", rel="noopener noreferrer") Other Media
 
   //- Photo section
   #portfolio
@@ -144,56 +76,14 @@ block content
       .row
         .portfolio-items
           //- Replace thumbnails for each movie
-          .col-sm-6.col-md-3.col-lg-3.web
-            .portfolio-item
-              .hover-bg
-                a(href='https://www.youtube.com/watch?v=8mE0SY7WW74', title='Released on 2020/04/25', rel='prettyPhoto')
-                  .hover-text
-                    h4 Whack a mole
-                  img(src='/images/portfolio/01-thumb.jpg', class='img-responsive', alt='Whack a mole')
-          .col-sm-6.col-md-3.col-lg-3.web
-            .portfolio-item
-              .hover-bg
-                a(href='https://www.youtube.com/watch?v=g1EETsO1Xx8', title='Released on 2020/05/13', rel='prettyPhoto')
-                  .hover-text
-                    h4 peko-niko-boo!
-                  img(src='/images/portfolio/02-thumb.jpg', class='img-responsive', alt='peko-niko-boo!')
-          .col-sm-6.col-md-3.col-lg-3.web
-            .portfolio-item
-              .hover-bg
-                a(href='https://www.youtube.com/watch?v=Ju6JGnx07DA', title='Released on 2020/06/03', rel='prettyPhoto')
-                  .hover-text
-                    h4 SEQUIN BRANDY
-                  img(src='/images/portfolio/03-thumb.jpg', class='img-responsive', alt='SEQUIN BRANDY')
-          .col-sm-6.col-md-3.col-lg-3.web
-            .portfolio-item
-              .hover-bg
-                a(href='https://www.youtube.com/watch?v=I-7JRuPQDIU', title='Released on 2020/07/01', rel='prettyPhoto')
-                  .hover-text
-                    h4 Drowning in Blue
-                  img(src='/images/portfolio/04-thumb.jpg', class='img-responsive', alt='Drowning in Blue')
-          .col-sm-6.col-md-3.col-lg-3.web
-            .portfolio-item
-              .hover-bg
-                a(href='https://www.youtube.com/watch?v=4ZJmMxzZKQs', title='Released on 2020/07/01', rel='prettyPhoto')
-                  .hover-text
-                    h4 Sunny Puddle
-                  img(src='/images/portfolio/05-thumb.jpg', class='img-responsive', alt='Drowning in Blue')
-          .col-sm-6.col-md-3.col-lg-3.web
-            .portfolio-item
-              .hover-bg
-                a(href='https://www.youtube.com/watch?v=tO99MbnvZE4', title='Released on 2021/01/25', rel='prettyPhoto')
-                  .hover-text
-                    h4 SWEET DREAMS
-                  img(src='/images/portfolio/06-thumb.jpg', class='img-responsive', alt='SWEET DREAMS')
-          .col-sm-6.col-md-3.col-lg-3.web
-            .portfolio-item
-              .hover-bg
-                a(href='https://www.youtube.com/watch?v=J3Xo78Ah8IA', title='Released on 2021/05/15', rel='prettyPhoto')
-                  .hover-text
-                    h4 ANTA NANKA DAIKIRAI
-                  img(src='/images/portfolio/07-thumb.jpg', class='img-responsive', alt='ANTA NANKA DAIKIRAI')
-
+          each mv in movies.data
+            .col-sm-6.col-md-3.col-lg-3.web
+              .portfolio-item
+                .hover-bg
+                  a(href=`${mv.url_youtube}`, title=`${mv.descriptions}`, rel='prettyPhoto')
+                    .hover-text
+                      h4 #{mv.title}
+                    img(src=`${mv.url_local}`, class='img-responsive', alt=`${mv.title}`)
 
   //- Biography Section
   #biography.text-center
