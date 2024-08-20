@@ -1,5 +1,3 @@
-import { join } from 'path';
-
 import { Module } from '@nestjs/common';
 import { HttpModule } from '@nestjs/axios';
 import { ConfigModule } from '@nestjs/config';
@@ -8,7 +6,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { MusicEntity } from './entities/musics.entity';
 import { MovieEntity } from './entities/movies.entity';
 
-import { AppController } from './app.controller';
+import { AppController } from './controllers/app.controller';
+import { MailController } from './controllers/mail.controller';
+import { ReleaseController } from './controllers/release.controller';
+
 import { HealthService } from './services/healthz.service';
 import { MailService } from './services/mail.service';
 import { MusicService } from './services/music.db.service';
@@ -35,7 +36,11 @@ import { MovieService } from './services/movie.db.service';
       isGlobal: true
     }),
   ],
-  controllers: [AppController],
+  controllers: [
+    AppController,
+    MailController,
+    ReleaseController,
+  ],
   providers: [
     HealthService,
     MailService,
