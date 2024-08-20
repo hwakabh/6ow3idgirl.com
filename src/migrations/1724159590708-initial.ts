@@ -1,11 +1,11 @@
 import { MigrationInterface, QueryRunner } from "typeorm";
 
-export class Initial1724143022051 implements MigrationInterface {
-    name = 'Initial1724143022051'
+export class Initial1724159590708 implements MigrationInterface {
+    name = 'Initial1724159590708'
 
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.query(`
-            CREATE TABLE \`musics\` (
+            CREATE TABLE \`music\` (
                 \`id\` int NOT NULL AUTO_INCREMENT COMMENT 'ID of Music release',
                 \`title\` varchar(255) NOT NULL COMMENT 'Title of music release',
                 \`url_local\` varchar(255) NOT NULL COMMENT 'Relative path of jacket image file',
@@ -20,7 +20,7 @@ export class Initial1724143022051 implements MigrationInterface {
             ) ENGINE = InnoDB
         `);
         await queryRunner.query(`
-            CREATE TABLE \`movies\` (
+            CREATE TABLE \`movie\` (
                 \`id\` int NOT NULL AUTO_INCREMENT COMMENT 'ID of Movie release',
                 \`title\` varchar(255) NOT NULL COMMENT 'Name of movie',
                 \`descriptions\` varchar(255) NOT NULL COMMENT 'Short descriptions of movie',
@@ -35,10 +35,10 @@ export class Initial1724143022051 implements MigrationInterface {
 
     public async down(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.query(`
-            DROP TABLE \`movies\`
+            DROP TABLE \`movie\`
         `);
         await queryRunner.query(`
-            DROP TABLE \`musics\`
+            DROP TABLE \`music\`
         `);
     }
 
