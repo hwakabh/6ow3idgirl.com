@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.3.0](https://github.com/hwakabh/6ow3idGirl/compare/6ow3idgirl-v1.2.0...6ow3idgirl-v1.3.0) (2024-08-20)
+
+
+### Features
+
+* added entities for releases of music/movies. ([268e23f](https://github.com/hwakabh/6ow3idGirl/commit/268e23fd09bad86e4c6b609868ef9e201eff6f1c))
+* added fixtures-ts-node-commonjs and Music fixtures for tests. ([7c592c1](https://github.com/hwakabh/6ow3idGirl/commit/7c592c1b439afca0135a6ab54404f91571a5d05a))
+* added TypeORM to application. ([9d0a3b4](https://github.com/hwakabh/6ow3idGirl/commit/9d0a3b454b3966438d80392c3615f5411a65c589))
+* bind services to controller/modules with its entities. ([50f0a43](https://github.com/hwakabh/6ow3idGirl/commit/50f0a437eccd8ef485e40b4d0c62ed9b8bcc7097))
+* finalized fixture data. ([bfad57f](https://github.com/hwakabh/6ow3idGirl/commit/bfad57f18d52e9f5ad596e487abf87fc1c880953))
+* **model:** added configs and migrations for TypeORM v0.3 or later. ([ba0f101](https://github.com/hwakabh/6ow3idGirl/commit/ba0f10173048a66545bc8cd878d6e3ad4d7221f3))
+* **services:** added Read/List for movie entity. ([93ff75c](https://github.com/hwakabh/6ow3idGirl/commit/93ff75c47185082194310ec3a7aa16a2823c9874))
+* **views:** added pug-loops for render responses from services. ([3441529](https://github.com/hwakabh/6ow3idGirl/commit/344152906be71a043aac51f90ea5872aba3b1494))
+
+
+### Bug Fixes
+
+* **models:** application start with migration operations. ([953b862](https://github.com/hwakabh/6ow3idGirl/commit/953b8621bb085e2b73dc2d0961aec1bc991ae30e))
+
 ## [1.2.0](https://github.com/hwakabh/6ow3idGirl/compare/6ow3idgirl-v1.1.0...6ow3idgirl-v1.2.0) (2024-03-20)
 
 
