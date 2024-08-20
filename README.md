@@ -21,7 +21,7 @@ Also this application has been controlled under the concepts of release automati
 The release PR would be automatically synced by the updates of code basis, and you can see its [release in GitHub](https://github.com/hwakabh/6ow3idGirl/releases).
 
 
-## Running and debug locally
+## Development setup
 
 ### Setup Node.js environment
 
@@ -43,6 +43,20 @@ $ npm list
 
 # build Nest application
 $ npm run build
+```
+
+### Setup MySQL databases
+
+Since this application generally expects MySQL database as Nest model backend, we need to prepare MySQL on your environment for development setup. \
+For keeping clean on your local environment, we would expect use containers for preparing MySQL database. \
+If you have already been enabled to run `docker` commands as a frontend of its engines, such as Docker Desktop or OrbStack:
+
+```shell
+# start MySQL containers
+% docker run -d -e MYSQL_ROOT_PASSWORD="***" -e MYSQL_DATABASE="6ow3idgirl" -p 3306:3306 bitnami/mysql:latest
+
+# load fixture data
+% npm run fixtures
 ```
 
 ### run application
