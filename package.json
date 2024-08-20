@@ -3,28 +3,27 @@
   "version": "1.2.0",
   "private": true,
   "scripts": {
-    "start": "nest start"
+    "start": "nest start",
+    "build": "nest build"
   },
   "engines": {
-    "node": "20.11.1"
+    "node": "20.16.0"
   },
   "dependencies": {
-    "@nestjs/axios": "^3.0.2",
-    "@nestjs/cli": "^10.3.2",
-    "@nestjs/common": "^10.3.4",
-    "@nestjs/config": "^3.2.0",
-    "@nestjs/core": "^10.3.4",
-    "@nestjs/platform-express": "^10.3.4",
-    "@nestjs/typeorm": "^10.0.2",
-    "axios": "^1.6.8",
+    "@nestjs/axios": "^3.0.3",
+    "@nestjs/cli": "^10.4.4",
+    "@nestjs/common": "^10.4.1",
+    "@nestjs/config": "^3.2.3",
+    "@nestjs/core": "^10.4.1",
+    "@nestjs/platform-express": "^10.4.1",
+    "axios": "^1.7.4",
     "cookie-parser": "~1.4.6",
-    "debug": "~4.3.4",
-    "express": "~4.18.3",
+    "debug": "~4.3.6",
+    "express": "~4.19.2",
     "helmet": "^7.1.0",
     "http-errors": "~2.0.0",
     "morgan": "~1.10.0",
-    "mysql2": "^3.9.2",
-    "pug": "~3.0.2",
+    "pug": "~3.0.3",
     "reflect-metadata": "^0.2.1",
     "rxjs": "^7.8.1",
     "typeorm": "^0.3.20"
@@ -35,8 +34,9 @@
     "@types/helmet": "^4.0.0",
     "@types/http-errors": "^2.0.4",
     "@types/morgan": "^1.9.9",
-    "@types/node": "^20.11.30",
+    "@types/node": "^20.16.1",
+    "http-server": "^14.1.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.2"
+    "typescript": "^5.5.4"
   }
 }
