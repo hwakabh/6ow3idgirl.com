@@ -1,0 +1,37 @@
+entity: Movie
+items:
+  movie0:
+    title: 'Whack a mole'
+    descriptions: 'Released on 2020/04/25'
+    url_local: '/images/portfolio/01-thumb.jpg'
+    url_youtube: 'https://www.youtube.com/watch?v=8mE0SY7WW74'
+  movie1:
+    title: 'peko-niko-boo!'
+    descriptions: 'Released on 2020/05/13'
+    url_local: '/images/portfolio/02-thumb.jpg'
+    url_youtube: 'https://www.youtube.com/watch?v=g1EETsO1Xx8'
+  movie2:
+    title: 'SEQUIN BRANDY'
+    descriptions: 'Released on 2020/06/03'
+    url_local: '/images/portfolio/03-thumb.jpg'
+    url_youtube: 'https://www.youtube.com/watch?v=Ju6JGnx07DA'
+  movie3:
+    title: 'Drowning in Blue'
+    descriptions: 'Released on 2020/07/01'
+    url_local: '/images/portfolio/04-thumb.jpg'
+    url_youtube: 'https://www.youtube.com/watch?v=I-7JRuPQDIU'
+  movie4:
+    title: 'Sunny Puddle'
+    descriptions: 'Released on 2020/07/01'
+    url_local: '/images/portfolio/05-thumb.jpg'
+    url_youtube: 'https://www.youtube.com/watch?v=4ZJmMxzZKQs'
+  movie5:
+    title: 'SWEET DREAMS'
+    descriptions: 'Released on 2021/01/25'
+    url_local: '/images/portfolio/06-thumb.jpg'
+    url_youtube: 'https://www.youtube.com/watch?v=tO99MbnvZE4'
+  movie6:
+    title: 'ANTA NANKA DAIKIRAI'
+    descriptions: 'Released on 2021/05/15'
+    url_local: '/images/portfolio/07-thumb.jpg'
+    url_youtube: 'https://www.youtube.com/watch?v=J3Xo78Ah8IA'
