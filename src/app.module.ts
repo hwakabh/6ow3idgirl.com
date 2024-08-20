@@ -3,8 +3,8 @@ import { HttpModule } from '@nestjs/axios';
 import { ConfigModule } from '@nestjs/config';
 
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { MusicEntity } from './entities/musics.entity';
-import { MovieEntity } from './entities/movies.entity';
+import { Music } from './entities/musics.entity';
+import { Movie } from './entities/movies.entity';
 
 import { AppController } from './controllers/app.controller';
 import { MailController } from './controllers/mail.controller';
@@ -25,13 +25,13 @@ import { MovieService } from './services/movie.db.service';
       database: '6ow3idgirl',
       username: 'root',
       password: 'root',
-      entities: ['dist/entity/*.js'],
+      entities: ['dist/entities/*.js'],
       migrations: ['dist/migrations/*.js'],
       logging: true,
       // if true, data will be automatically updated with detecting changes
       synchronize: false,
     }),
-    TypeOrmModule.forFeature([MusicEntity, MovieEntity]),
+    TypeOrmModule.forFeature([Music, Movie]),
     ConfigModule.forRoot({
       isGlobal: true
     }),
