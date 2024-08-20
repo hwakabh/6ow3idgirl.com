@@ -13,7 +13,7 @@ As this application would be delivered as OCI container format, we have CI workf
 The source code here will be build automatically by [Cloud Native Buildpacks](https://buildpacks.io) in GitHub Actions,
 and you can see container images as [GitHub Packages in this repository](https://github.com/hwakabh/6ow3idGirl/pkgs/container/6ow3idgirl).
 
-While the workflow definitions are stored in the [`.github/workflows/`](.github/workflows/) directories as GitHub Actions requirements, for the phase of Build and Push container image, the [`.github/workflows/publish.yaml`](.github/workflows/publish.yaml) has its resposibilities.
+While the workflow definitions are stored in the [`.github/workflows/`](.github/workflows/) directories as GitHub Actions requirements, for the phase of Build and Push container image, the [`.github/workflows/publish.yaml`](.github/workflows/publish.yaml) has its responsibilities.
 
 ### Releases
 Also this application has been controlled under the concepts of release automations with [`release-please`](https://github.com/googleapis/release-please-action).
