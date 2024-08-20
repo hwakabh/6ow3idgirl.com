@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nest start",
     "build": "nest build",
-    "typeorm": "typeorm-ts-node-commonjs"
+    "typeorm": "typeorm-ts-node-commonjs -d src/databases.ts",
+    "fixtures": "fixtures-ts-node-commonjs load ./src/fixtures --dataSource src/databases.ts"
   },
   "engines": {
     "node": "20.16.0"
