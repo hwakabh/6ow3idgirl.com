@@ -8,8 +8,8 @@ export const AppDataSource = new DataSource({
   database: '6ow3idgirl',
   username: 'root',
   password: 'root',
-  entities: ['src/entities/*.ts'],
-  migrations: ['src/migrations/*.ts'],
+  entities: ['dist/entities/*.js'],
+  migrations: ['dist/migrations/*.js'],
   logging: true,
   // if true, data will be automatically updated with detecting changes
   synchronize: false,
