@@ -11,7 +11,6 @@ export class MailController {
     private readonly mailService: MailService,
   ) {}
 
-  // TODO: implemented dedicated controller
   @Post('/mail')
   mail(
     @Body() mailBody: MailBody
