@@ -3,7 +3,8 @@
   "version": "1.2.0",
   "private": true,
   "scripts": {
-    "start": "nest start"
+    "start": "nest start",
+    "build": "nest build"
   },
   "engines": {
     "node": "20.16.0"
