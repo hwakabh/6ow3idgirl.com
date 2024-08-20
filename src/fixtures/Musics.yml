@@ -1,0 +1,10 @@
+entity: Music
+items:
+  music{0..10}:
+    title: '{{random.word}}'
+    url_local: '{{random.word}}'
+    url_spotify: '{{random.word}}'
+    url_apple: '{{random.word}}'
+    url_line: '{{random.word}}'
+    url_amazon: '{{random.word}}'
+    url_bigup: '{{random.word}}'
