@@ -6,7 +6,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Music } from './entities/musics.entity';
 import { Movie } from './entities/movies.entity';
 
-import { AppController } from './controllers/app.controller';
+import { AppController } from './app.controller';
 import { MailController } from './controllers/mail.controller';
 import { ReleaseController } from './controllers/release.controller';
 

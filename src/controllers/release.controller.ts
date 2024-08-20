@@ -11,7 +11,6 @@ export class ReleaseController {
     private readonly movieService: MovieService,
   ) {}
 
-  // TODO: implement dedicated controller/module for release(=music+movie)
   @Get('/music')
   readAllMusic() {
     return this.musicService.readAll();
@@ -21,4 +20,15 @@ export class ReleaseController {
   readOneMusic(@Param('id') id: number) {
     return this.musicService.readOne(id);
   }
+
+  @Get('/movie')
+  readAllMovie() {
+    return this.movieService.readAll();
+  }
+
+  @Get('/movie/:id')
+  readOneMovie(@Param('id') id: number) {
+    return this.movieService.readOne(id);
+  }
+
 }

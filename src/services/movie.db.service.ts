@@ -10,4 +10,12 @@ export class MovieService {
     private readonly movieRepository: Repository<Movie>,
   ) {}
 
+  async readOne(id: number): Promise<Movie> {
+    return await this.movieRepository.findOneBy({ id: id });
+  }
+
+  async readAll(): Promise<Movie[]> {
+    return await this.movieRepository.find({});
+  }
+
 }
