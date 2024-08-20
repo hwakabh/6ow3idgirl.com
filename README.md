@@ -1,17 +1,24 @@
 # 6ow3idgirl
 Official Homepage of 6ow3idgirl
 
-***
 
 ## Environments
 Static webpage with Nest, on GKE (Google Kubernetes Engine)
 
-***
 
-## Build integrations
-TBD
+## CI: Build integrations
 
-***
+### Build and Push
+As this application would be delivered as OCI container format, we have CI workflows to build & ship automatically to GHCR (GitHub Container Registry).
+The source code here will be build automatically by [Cloud Native Buildpacks](https://buildpacks.io) in GitHub Actions,
+and you can see container images as [GitHub Packages in this repository](https://github.com/hwakabh/6ow3idGirl/pkgs/container/6ow3idgirl).
+
+While the workflow definitions are stored in the [`.github/workflows/`](.github/workflows/) directories as GitHub Actions requirements, for the phase of Build and Push container image, the [`.github/workflows/publish.yaml`](.github/workflows/publish.yaml) has its resposibilities.
+
+### Releases
+Also this application has been controlled under the concepts of release automations with [`release-please`](https://github.com/googleapis/release-please-action).
+The release PR would be automatically synced by the updates of code basis, and you can see its [release in GitHub](https://github.com/hwakabh/6ow3idGirl/releases).
+
 
 ## Running and debug locally
 
@@ -55,7 +62,6 @@ $ curl localhost:8080/healthz ;
 {"status":"ok"}
 ```
 
-***
 
 ## License
 
