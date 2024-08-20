@@ -1,9 +1,10 @@
+import { join } from 'path';
+
 import { Module } from '@nestjs/common';
 import { HttpModule } from '@nestjs/axios';
 import { ConfigModule } from '@nestjs/config';
 
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { typeormConfig } from './typeOrm.config';
 import { MusicEntity } from './entities/musics.entity';
 import { MovieEntity } from './entities/movies.entity';
 
@@ -16,12 +17,23 @@ import { MovieService } from './services/movie.db.service';
 @Module({
   imports: [
     HttpModule,
-    TypeOrmModule.forRoot(typeormConfig),
+    TypeOrmModule.forRoot({
+      type: 'mysql',
+      host: '0.0.0.0',
+      port: 3306,
+      database: '6ow3idgirl',
+      username: 'root',
+      password: 'root',
+      entities: [join(__dirname, '../**/*.entity{.ts,.js}')],
+      migrations: [join(__dirname, '../**/*.migrations{.ts,.js}')],
+      logging: true,
+      // if true, data will be automatically updated with detecting changes
+      synchronize: false,
+    }),
+    TypeOrmModule.forFeature([MusicEntity, MovieEntity]),
     ConfigModule.forRoot({
       isGlobal: true
     }),
-    // TODO: added DTO & dedicated modules/services
-    TypeOrmModule.forFeature([MusicEntity, MovieEntity]),
   ],
   controllers: [AppController],
   providers: [
