@@ -3,7 +3,8 @@
   "version": "1.2.0",
   "private": true,
   "scripts": {
-    "start": "nest start"
+    "start": "nest start",
+    "build": "nest build"
   },
   "engines": {
     "node": "20.16.0"
@@ -33,6 +34,7 @@
     "@types/http-errors": "^2.0.4",
     "@types/morgan": "^1.9.9",
     "@types/node": "^20.16.1",
+    "http-server": "^14.1.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
   }
