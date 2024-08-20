@@ -9,14 +9,15 @@ Static webpage with Nest, on GKE (Google Kubernetes Engine)
 ## CI: Build integrations
 
 ### Build and Push
-As this application would be delivered as OCI container format, we have CI workflows to build & ship automatically to GHCR (GitHub Container Registry).
-The source code here will be build automatically by [Cloud Native Buildpacks](https://buildpacks.io) in GitHub Actions,
+As this application would be delivered as OCI container format, we have CI workflows to build & ship automatically to GHCR (GitHub Container Registry). \
+The source code here will be build automatically by [Cloud Native Buildpacks](https://buildpacks.io) in GitHub Actions, \
 and you can see container images as [GitHub Packages in this repository](https://github.com/hwakabh/6ow3idGirl/pkgs/container/6ow3idgirl).
 
-While the workflow definitions are stored in the [`.github/workflows/`](.github/workflows/) directories as GitHub Actions requirements, for the phase of Build and Push container image, the [`.github/workflows/publish.yaml`](.github/workflows/publish.yaml) has its responsibilities.
+While the workflow definitions are stored in the [`.github/workflows/`](.github/workflows/) directories as GitHub Actions requirements, \
+for the phase of Build and Push container image, the [`.github/workflows/publish.yaml`](.github/workflows/publish.yaml) has its responsibilities.
 
 ### Releases
-Also this application has been controlled under the concepts of release automations with [`release-please`](https://github.com/googleapis/release-please-action).
+Also this application has been controlled under the concepts of release automations with [`release-please`](https://github.com/googleapis/release-please-action). \
 The release PR would be automatically synced by the updates of code basis, and you can see its [release in GitHub](https://github.com/hwakabh/6ow3idGirl/releases).
 
 
@@ -24,8 +25,9 @@ The release PR would be automatically synced by the updates of code basis, and y
 
 ### Setup Node.js environment
 
-Install specific version of Node.js, where runtime definitions are in `package.json`.
-As this repository based on creating virtual environment with [`nodebrew` version manager](https://github.com/hokaccha/nodebrew), please follow the instructions to install `nodebrew` command on your local environment in the link.
+Install specific version of Node.js, where runtime definitions are in `package.json`. \
+As this repository based on creating virtual environment with [`nodebrew` version manager](https://github.com/hokaccha/nodebrew), \
+please follow the instructions to install `nodebrew` command on your local environment in the link.
 
 Note that after installation of nodebrew, we can use `node` & `npm` commands, and please make sure of verifying your Node.js version with the command `node --version`.
 In case you're using another Node.js version controlling systems, like `nvm` or `nodist`, please official references of them
