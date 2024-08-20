@@ -40,7 +40,14 @@ $ npm run build
 Confirmed that the artifacts are placed in `./dist` directories, then just run:
 
 ```shell
+# run transpiled applications
 # by default, localhost:8080 would be listened as application entrypoint
+$ node dist/main.js
+```
+
+If you need to run application for development purpose, just run as dev mode:
+
+```shell
 $ npm run start
 
 # also you can confirm application bootup with /healthz endpoint
