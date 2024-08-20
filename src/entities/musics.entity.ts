@@ -1,7 +1,7 @@
 import { Column, Entity, BaseEntity, CreateDateColumn, UpdateDateColumn, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity('musics')
-export class MusicEntity extends BaseEntity {
+@Entity()
+export class Music extends BaseEntity {
   @PrimaryGeneratedColumn({ comment: 'ID of Music release' })
   readonly id: number;
 

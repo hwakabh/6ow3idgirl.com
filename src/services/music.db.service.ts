@@ -2,32 +2,32 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 // import { CreateMusicDTO, UpdateMusicDTO } from '../dto/music.dto';
-import { MusicEntity } from '../entities/musics.entity';
+import { Music } from '../entities/musics.entity';
 
 @Injectable()
 export class MusicService {
   constructor(
-    @InjectRepository(MusicEntity)
-    private readonly musicRepository: Repository<MusicEntity>,
+    @InjectRepository(Music)
+    private readonly musicRepository: Repository<Music>,
   ) {}
 
-  // async createOne(dto: CreateMusicDTO): Promise<MusicEntity> {
+  // async createOne(dto: CreateMusicDTO): Promise<Music> {
   //   return await this.musicRepository.save(dto);
   // }
 
-  async readOne(id: number): Promise<MusicEntity> {
+  async readOne(id: number): Promise<Music> {
     return await this.musicRepository.findOneBy({ id: id });
   }
 
-  async readAll(): Promise<MusicEntity[]> {
+  async readAll(): Promise<Music[]> {
     return await this.musicRepository.find({});
   }
 
-  // async updateOne(music: MusicEntity, dto: UpdateMusicDTO): Promise<MusicEntity> {
+  // async updateOne(music: Music, dto: UpdateMusicDTO): Promise<Music> {
   //   return await this.musicRepository.save({ ...music, ...dto });
   // }
 
-  // async deleteOne(music: MusicEntity): Promise<MusicEntity> {
+  // async deleteOne(music: Music): Promise<Music> {
   //   return await music.remove();
   // }
 }
