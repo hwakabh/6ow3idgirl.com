@@ -22,7 +22,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install pack
-        uses: buildpacks/github-actions/setup-pack@v5.7.4
+        uses: buildpacks/github-actions/setup-pack@v5.8.3
 
       # need GOOGLE_RUNTIME explicity
       # https://github.com/GoogleCloudPlatform/buildpacks/issues/220#issuecomment-1199867259
