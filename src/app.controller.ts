@@ -22,6 +22,7 @@ export class AppController {
   async root() : Promise<AppRootResponse> {
     // platform specific for Nest MVC to fetch URL of application backend
     const url: string = this.configService.get('URL') ?? 'http://localhost:8080';
+    console.log(`Starting application with [ ${url} ] ...`)
 
     const musics: object = await firstValueFrom(this.httpService.get(url + '/music'));
     const movies: object = await firstValueFrom(this.httpService.get(url + '/movie'));
