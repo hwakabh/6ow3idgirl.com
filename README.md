@@ -96,14 +96,14 @@ The release PR would be automatically synced by the updates of code basis, and y
 ## Configurations (Environment Variables)
 For hosting application onto Heroku platform and also for running apps in local environment, there are several configuration options with this applications:
 
-| variables | descriptions | default |
-| --- | --- | --- |
-| `URL` | The URL of the application itself. This is required for using MVC with Nest | `http://localhost:8080` |
-| `MYSQL_HOSTNAME` | Endpoint for accessing MySQL, or its equivalent, instances | n/a |
-| `MYSQL_PORT` | Port number for MySQL Database | n/a |
-| `MYSQL_DATABASE` | Name of MySQL database for this application | n/a |
-| `MYSQL_USERNAME` | Username for MySQL Database | n/a |
-| `MYSQL_PASSWORD` | Password for MySQL Database | n/a |
+| variables | type | descriptions | default |
+| --- | --- | --- | --- |
+| `URL` | String | The URL of the application itself. This is required for using MVC with Nest | `http://localhost:8080` |
+| `MYSQL_HOSTNAME` | String | Endpoint for accessing MySQL, or its equivalent, instances | `0.0.0.0` |
+| `MYSQL_PORT` | Number | Port number for MySQL Database | `3306` |
+| `MYSQL_DATABASE` | String | Name of MySQL database for this application | `roza` |
+| `MYSQL_USERNAME` | String | Username for MySQL Database | `root` |
+| `MYSQL_PASSWORD` | String | Password for MySQL Database | `root` |
 
 Also this is specific for Nest application, since Heroku buildpacks will set the `NODE_ENV` to production and `NPM_CONFIG_PRODUCTION` flag to `true` by default and installs production dependencies only, this will cause 503 error when accessing application. \
 For resolving this, we need to install devDependencies, and set config vars `NPM_CONFIG_PRODUCTION` to `false`.
