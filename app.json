@@ -1,10 +1,13 @@
 {
   "name": "roza-6ow3idgirl.com",
   "scripts": {
-    "postdeploy": "/cnb/process/migrate && /cnb/process/fixture",
-    "pr-predestroy": "/cnb/process/migrate && /cnb/process/fixture"
+    "postdeploy": "npm run typeorm migration:run && npm run fixtures",
+    "pr-predestroy": "npm run typeorm migration:run && npm run fixtures"
   },
   "env": {
+    "URL": {
+      "required": false
+    },
     "JAWSDB_URL": {
       "required": true
     },
