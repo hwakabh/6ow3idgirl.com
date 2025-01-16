@@ -3,7 +3,7 @@ Official Homepage of 6ow3idgirl
 
 
 ## Environments
-Static webpage with Nest, on GKE (Google Kubernetes Engine)
+Static webpage with generic MVC of Nest.
 
 
 ## CI: Build integrations
