@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.0](https://github.com/hwakabh/6ow3idgirl.com/compare/v1.3.0...v2.0.0) (2025-01-16)
+## [2.0.0](https://github.com/hwakabh/6ow3idgirl.com/compare/5cfb6e09954376d5cb9cc1e187fe3631fac2f3c1...v2.0.0) (2025-01-16)
 
 
 ### ⚠ BREAKING CHANGES
@@ -50,7 +50,7 @@
 * **deps:** made @nestjs/cli as dependencies instead of devDependencies. ([773ba1c](https://github.com/hwakabh/6ow3idgirl.com/commit/773ba1cd7f736067c982d601cdc99343459eb812))
 * **models:** application start with migration operations. ([953b862](https://github.com/hwakabh/6ow3idgirl.com/commit/953b8621bb085e2b73dc2d0961aec1bc991ae30e))
 
-## [1.3.0](https://github.com/hwakabh/6ow3idGirl/compare/6ow3idgirl-v1.2.0...6ow3idgirl-v1.3.0) (2024-08-20)
+## 1.3.0 (2024-08-20)
 
 
 ### Features
@@ -69,7 +69,7 @@
 
 * **models:** application start with migration operations. ([953b862](https://github.com/hwakabh/6ow3idGirl/commit/953b8621bb085e2b73dc2d0961aec1bc991ae30e))
 
-## [1.2.0](https://github.com/hwakabh/6ow3idGirl/compare/6ow3idgirl-v1.1.0...6ow3idgirl-v1.2.0) (2024-03-20)
+## 1.2.0 (2024-03-20)
 
 
 ### Features
@@ -83,7 +83,7 @@
 
 * **deps:** made @nestjs/cli as dependencies instead of devDependencies. ([773ba1c](https://github.com/hwakabh/6ow3idGirl/commit/773ba1cd7f736067c982d601cdc99343459eb812))
 
-## [1.1.0](https://github.com/hwakabh/6ow3idGirl/compare/6ow3idgirl-v1.0.0...6ow3idgirl-v1.1.0) (2024-03-20)
+## 1.1.0 (2024-03-20)
 
 
 ### Features
@@ -93,7 +93,7 @@
 * **services:** added service skeleton for sending email. ([c576437](https://github.com/hwakabh/6ow3idGirl/commit/c5764371c9b3609329230b13cea43b5eae4be05e))
 * **types:** added models for responses with application root. ([46d72a3](https://github.com/hwakabh/6ow3idGirl/commit/46d72a38df2b7081dee6a2f2565f8dcc726c7abe))
 
-## [1.0.0](https://github.com/hwakabh/6ow3idGirl/compare/6ow3idgirl-v0.1.0...6ow3idgirl-v1.0.0) (2024-03-08)
+## 1.0.0 (2024-03-08)
 
 
 ### ⚠ BREAKING CHANGES
@@ -120,7 +120,7 @@
 * **ci:** detection errors with adding environmental variables. ([e7fc428](https://github.com/hwakabh/6ow3idGirl/commit/e7fc4285c4c5ee96d7a9ab01ce0fa749504af428))
 * **ci:** removed upper case from tag name. ([3908837](https://github.com/hwakabh/6ow3idGirl/commit/3908837b9cb13bd676492f0bf6f643a70125e323))
 
-## [0.1.0](https://github.com/hwakabh/6ow3idGirl/compare/low-mid-girl-v0.0.1...low-mid-girl-v0.1.0) (2024-03-08)
+## 0.1.0 (2024-03-08)
 
 
 ### Features
