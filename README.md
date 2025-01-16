@@ -52,8 +52,12 @@ For keeping clean on your local environment, we would expect use containers for 
 If you have already been enabled to run `docker` commands as a frontend of its engines, such as Docker Desktop or OrbStack:
 
 ```shell
-# start MySQL containers
+# start MySQL containers with creating database
 % docker run -d -e MYSQL_ROOT_PASSWORD="***" -e MYSQL_DATABASE="6ow3idgirl" -p 3306:3306 bitnami/mysql:latest
+
+# Run migrations, this will create tables required by apps
+# note that migration process will not create database, so need to create before applying migrations
+% npm run typeorm migration:run
 
 # load fixture data
 % npm run fixtures
