@@ -8,6 +8,9 @@
     "JAWSDB_URL": {
       "required": true
     },
+    "NPM_CONFIG_PRODUCTION": {
+      "required": true
+    },
     "MYSQL_DATABASE": {
       "required": true
     },
