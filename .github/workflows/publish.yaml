@@ -24,12 +24,9 @@ jobs:
       - name: Install pack
         uses: buildpacks/github-actions/setup-pack@v5.8.7
 
-      # need GOOGLE_RUNTIME explicity
-      # https://github.com/GoogleCloudPlatform/buildpacks/issues/220#issuecomment-1199867259
       - name: Publish packages
         run: |
           pack build ghcr.io/hwakabh/6ow3idgirl:latest \
-            --builder gcr.io/buildpacks/builder:latest \
+            --builder heroku/builder:24 \
             --path . \
-            --env GOOGLE_RUNTIME=nodejs \
             --publish
