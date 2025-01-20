@@ -13,8 +13,8 @@ permissions:
   contents: read
 
 jobs:
-  triage_issue:
-    runs-on: ubuntu-latest
+  triage-issue:
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
