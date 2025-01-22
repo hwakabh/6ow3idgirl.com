@@ -10,7 +10,7 @@
     "fixtures": "fixtures-ts-node-commonjs load ./src/fixtures --dataSource src/databases.ts"
   },
   "engines": {
-    "node": "22.13.0"
+    "node": "22.13.1"
   },
   "dependencies": {
     "@nestjs/axios": "^4.0.0",
