@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/hwakabh/6ow3idgirl.com/compare/v2.0.0...v2.1.0) (2025-01-29)
+
+
+### Features
+
+* **typeorm:** enabled to parse credentials from JAWSDB_URL. ([650f173](https://github.com/hwakabh/6ow3idgirl.com/commit/650f17334b64b5dae5a22b1a50bef11958d26a6c))
+
 ## [2.0.0](https://github.com/hwakabh/6ow3idgirl.com/compare/5cfb6e09954376d5cb9cc1e187fe3631fac2f3c1...v2.0.0) (2025-01-16)
 
 
