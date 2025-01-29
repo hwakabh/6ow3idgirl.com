@@ -13,21 +13,6 @@
     },
     "NPM_CONFIG_PRODUCTION": {
       "required": true
-    },
-    "MYSQL_DATABASE": {
-      "required": true
-    },
-    "MYSQL_HOSTNAME": {
-      "required": true
-    },
-    "MYSQL_PASSWORD": {
-      "required": true
-    },
-    "MYSQL_PORT": {
-      "required": true
-    },
-    "MYSQL_USERNAME": {
-      "required": true
     }
   },
   "formation": {
