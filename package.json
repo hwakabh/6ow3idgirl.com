@@ -10,7 +10,7 @@
     "fixtures": "fixtures-ts-node-commonjs load ./src/fixtures --dataSource src/databases.ts"
   },
   "engines": {
-    "node": "22.13.1"
+    "node": "22.14.0"
   },
   "dependencies": {
     "@nestjs/axios": "^4.0.0",
@@ -39,7 +39,7 @@
     "@types/helmet": "^4.0.0",
     "@types/http-errors": "^2.0.4",
     "@types/morgan": "^1.9.9",
-    "@types/node": "^22.13.1",
+    "@types/node": "^22.13.4",
     "http-server": "^14.1.1",
     "ts-node": "^10.9.2",
     "typeorm-fixtures-cli": "^4.1.0",
