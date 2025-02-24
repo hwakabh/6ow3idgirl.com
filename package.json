@@ -14,11 +14,11 @@
   },
   "dependencies": {
     "@nestjs/axios": "^4.0.0",
-    "@nestjs/cli": "^11.0.2",
-    "@nestjs/common": "^11.0.9",
+    "@nestjs/cli": "^11.0.4",
+    "@nestjs/common": "^11.0.10",
     "@nestjs/config": "^4.0.0",
-    "@nestjs/core": "^11.0.9",
-    "@nestjs/platform-express": "^11.0.9",
+    "@nestjs/core": "^11.0.10",
+    "@nestjs/platform-express": "^11.0.10",
     "@nestjs/typeorm": "^11.0.0",
     "axios": "^1.7.9",
     "cookie-parser": "~1.4.7",
@@ -30,7 +30,7 @@
     "mysql2": "^3.12.0",
     "pug": "~3.0.3",
     "reflect-metadata": "^0.2.1",
-    "rxjs": "^7.8.1",
+    "rxjs": "^7.8.2",
     "typeorm": "^0.3.20"
   },
   "devDependencies": {
@@ -39,7 +39,7 @@
     "@types/helmet": "^4.0.0",
     "@types/http-errors": "^2.0.4",
     "@types/morgan": "^1.9.9",
-    "@types/node": "^22.13.4",
+    "@types/node": "^22.13.5",
     "http-server": "^14.1.1",
     "ts-node": "^10.9.2",
     "typeorm-fixtures-cli": "^4.1.0",
