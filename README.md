@@ -32,7 +32,9 @@ If you have already been enabled to run `docker` commands as a frontend of its e
 
 ```shell
 # start MySQL containers with creating database
-% docker run -d -e MYSQL_ROOT_PASSWORD="***" -e MYSQL_DATABASE="6ow3idgirl" -p 3306:3306 bitnami/mysql:latest
+% docker run -d -e MYSQL_ROOT_PASSWORD="root" -e MYSQL_DATABASE="roza" -p 3306:3306 bitnami/mysql:latest
+# provide database url with fallbacks
+% export JAWSDB_URL='mysql://root:root@0.0.0.0:3306/roza'
 
 # Run migrations, this will create tables required by apps
 # note that migration process will not create database, so need to create before applying migrations
@@ -55,9 +57,13 @@ If you need to run application for development purpose, just run as dev mode:
 
 ```shell
 $ npm run start
+```
 
+Then validate application access via healtchecking API endpoint:
+
+```shell
 # also you can confirm application bootup with /healthz endpoint
-$ curl localhost:8080/healthz ;
+$ curl localhost:8080/healthz ; echo
 {"status":"ok"}
 ```
 
