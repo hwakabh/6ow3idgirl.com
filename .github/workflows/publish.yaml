@@ -22,7 +22,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install pack
-        uses: buildpacks/github-actions/setup-pack@v5.8.9
+        uses: buildpacks/github-actions/setup-pack@v5.8.10
 
       - name: Publish packages
         run: |
