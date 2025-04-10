@@ -26,7 +26,7 @@ jobs:
 
       - name: Publish packages
         run: |
-          pack build ghcr.io/hwakabh/6ow3idgirl:latest \
+          pack build ghcr.io/hwakabh/6ow3idgirl.com:latest \
             --builder heroku/builder:24 \
             --path . \
             --publish
