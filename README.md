@@ -1,4 +1,9 @@
 # 6ow3idgirl
+THIS PROJECT HAS BEEN ARCHIVED WITH MIGRATED FROM GITHUB. 
+FOR FUTURE MAINTENANCE, SEE https://gitlab.com/hwakabh-dev/6ow3idgirl-com
+
+---
+
 Official Homepage of 6ow3idgirl \
 Developing as static webpage with generic MVC features of Nest.
 
